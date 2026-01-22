@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Nike",
+    "slug": "nike",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Logo_NIKE.svg",
+    "description": "Just Do It. Thương hiệu thể thao hàng đầu thế giới chuyên về giày dép và quần áo.",
+    "isActive": true
+  },
+  {
+    "name": "Adidas",
+    "slug": "adidas",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/2/20/Adidas_Logo.svg",
+    "description": "Impossible is Nothing. Biểu tượng của phong cách thể thao và đường phố.",
+    "isActive": true
+  },
+  {
+    "name": "Puma",
+    "slug": "puma",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Puma-logo-%28text%29.svg/1280px-Puma-logo-%28text%29.svg.png?20230824220146",
+    "description": "Forever Faster. Thương hiệu giày thể thao phong cách Đức.",
+    "isActive": true
+  },
+  {
+    "name": "Converse",
+    "slug": "converse",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/3/30/Converse_logo.svg",
+    "description": "Thương hiệu giày bóng rổ cổ điển với dòng Chuck Taylor All Star huyền thoại.",
+    "isActive": true
+  },
+  {
+    "name": "Vans",
+    "slug": "vans",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/9/91/Vans-logo.svg",
+    "description": "Off The Wall. Thương hiệu dành cho người chơi trượt ván và phong cách trẻ trung.",
+    "isActive": true
+  },
+  {
+    "name": "New Balance",
+    "slug": "new-balance",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/e/ea/New_Balance_logo.svg",
+    "description": "Sự cân bằng hoàn hảo giữa chức năng và thời trang.",
+    "isActive": true
+  }
+]

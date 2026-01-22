@@ -1,0 +1,1149 @@
+[
+	{
+		"name": "Nike Air Zoom Pegasus 40",
+		"slug": "nike-air-zoom-pegasus-40",
+		"_brandSlug": "nike",
+		"_categorySlug": "giay-chay-bo",
+		"description": "Đôi giày chạy bộ quốc dân với độ phản hồi năng lượng cao nhờ công nghệ Nike React và 2 túi Zoom Air. Phiên bản thứ 40 mang lại sự thoải mái tối ưu cho bàn chân.",
+		"price": 3519000,
+		"discountPrice": 3200000,
+		"rating": 4.8,
+		"numReviews": 25,
+		"isPublished": true,
+		"variants": [
+			{
+				"color": "Black/White",
+				"hexCode": "#000000",
+				"images": [
+					"https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/89f2b346-601e-42c2-901d-5572f4370600/air-zoom-pegasus-40-road-running-shoes-Q5F0mC.png"
+				],
+				"sizes": [
+					{ "size": 40, "quantity": 10 },
+					{ "size": 41, "quantity": 15 },
+					{ "size": 42, "quantity": 15 },
+					{ "size": 43, "quantity": 5 }
+				],
+				"sku": "NIKE-PEG40-BLK",
+				"price": 3519000
+			}
+		]
+	},
+	{
+		"name": "Adidas Stan Smith",
+		"slug": "adidas-stan-smith",
+		"_brandSlug": "adidas",
+		"_categorySlug": "sneaker-nam",
+		"description": "Biểu tượng của sự tối giản. Adidas Stan Smith với thiết kế da trắng mịn và gót xanh đặc trưng đã trở thành chuẩn mực của phong cách casual suốt nhiều thập kỷ.",
+		"price": 2500000,
+		"discountPrice": 0,
+		"rating": 4.7,
+		"numReviews": 50,
+		"isPublished": true,
+		"variants": [
+			{
+				"color": "White/Green",
+				"hexCode": "#FFFFFF",
+				"images": [
+					"https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/b47d77dd6f9547b992f2a9690129ac87_9366/Giay_Stan_Smith_trang_M20324_01_standard.jpg"
+				],
+				"sizes": [
+					{ "size": 38, "quantity": 10 },
+					{ "size": 39, "quantity": 10 },
+					{ "size": 40, "quantity": 20 },
+					{ "size": 41, "quantity": 20 }
+				],
+				"sku": "ADI-STAN-WHT-GRN",
+				"price": 2500000
+			}
+		]
+	},
+	{
+		"name": "Puma Suede Classic XXI",
+		"slug": "puma-suede-classic-xxi",
+		"_brandSlug": "puma",
+		"_categorySlug": "sneaker-nam",
+		"description": "Ra mắt từ năm 1968, Puma Suede đã thay đổi cuộc chơi. Chất liệu da lộn cao cấp cùng kiểu dáng vượt thời gian.",
+		"price": 2350000,
+		"discountPrice": 1990000,
+		"rating": 4.5,
+		"numReviews": 14,
+		"isPublished": true,
+		"variants": [
+			{
+				"color": "Red/White",
+				"hexCode": "#D32F2F",
+				"images": [
+					"https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/374915/02/sv01/fnd/VNM/fmt/png/Gi%C3%A0y-Sneakers-Unisex-Suede-Classic-XXI"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 5 },
+					{ "size": 40, "quantity": 10 },
+					{ "size": 41, "quantity": 10 }
+				],
+				"sku": "PUMA-SUEDE-RED",
+				"price": 2350000
+			},
+			{
+				"color": "Black/White",
+				"hexCode": "#000000",
+				"images": [
+					"https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/374915/01/sv01/fnd/VNM/fmt/png/Gi%C3%A0y-Sneakers-Unisex-Suede-Classic-XXI"
+				],
+				"sizes": [
+					{ "size": 40, "quantity": 8 },
+					{ "size": 41, "quantity": 8 },
+					{ "size": 42, "quantity": 8 }
+				],
+				"sku": "PUMA-SUEDE-BLK",
+				"price": 2350000
+			}
+		]
+	},
+	{
+		"name": "New Balance 327",
+		"slug": "new-balance-327",
+		"_brandSlug": "new-balance",
+		"_categorySlug": "sneaker-nam",
+		"description": "Lấy cảm hứng từ giày chạy bộ thập niên 70, NB 327 mang thiết kế táo bạo với logo N quá khổ và đế gai độc đáo.",
+		"price": 2800000,
+		"discountPrice": 0,
+		"rating": 4.6,
+		"numReviews": 20,
+		"isPublished": true,
+		"variants": [
+			{
+				"color": "Sea Salt/Rust",
+				"hexCode": "#F5F5DC",
+				"images": [
+					"https://nb.scene7.com/is/image/NB/ms327cgh_nb_02_i?$pdpflexf2$"
+				],
+				"sizes": [
+					{ "size": 40, "quantity": 5 },
+					{ "size": 41, "quantity": 10 },
+					{ "size": 42, "quantity": 10 }
+				],
+				"sku": "NB-327-SALT",
+				"price": 2800000
+			}
+		]
+	},
+	{
+		"name": "Vans Slip-On Checkerboard",
+		"slug": "vans-slip-on-checkerboard",
+		"_brandSlug": "vans",
+		"_categorySlug": "sneaker-nam",
+		"description": "Họa tiết bàn cờ kinh điển. Kiểu dáng giày lười tiện lợi, không dây buộc nhưng vẫn giữ chắc chân nhờ đệm cổ giày êm ái.",
+		"price": 1450000,
+		"discountPrice": 0,
+		"rating": 4.9,
+		"numReviews": 60,
+		"isPublished": true,
+		"variants": [
+			{
+				"color": "Black/Off White",
+				"hexCode": "#FFFFFF",
+				"images": [
+					"https://images.vans.com/is/image/Vans/VN000EYEBWW-HERO?$583x583$"
+				],
+				"sizes": [
+					{ "size": 36, "quantity": 10 },
+					{ "size": 37, "quantity": 10 },
+					{ "size": 38, "quantity": 15 },
+					{ "size": 39, "quantity": 15 },
+					{ "size": 40, "quantity": 15 }
+				],
+				"sku": "VANS-SLIP-CHK",
+				"price": 1450000
+			}
+		]
+	},
+	{
+		"name": "Nike Dunk Low Retro",
+		"slug": "nike-dunk-low-retro",
+		"_brandSlug": "nike",
+		"_categorySlug": "sneaker-nam",
+		"description": "Được tạo ra cho sân bóng rổ nhưng thống trị đường phố. Nike Dunk Low Retro trở lại với lớp da sắc nét và màu sắc lấy cảm hứng từ các trường đại học.",
+		"price": 2900000,
+		"discountPrice": 0,
+		"rating": 5.0,
+		"numReviews": 40,
+		"isPublished": true,
+		"variants": [
+			{
+				"color": "Panda (Black/White)",
+				"hexCode": "#000000",
+				"images": [
+					"https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/b1bcbca4-e853-4df7-b329-5be3c61ee057/dunk-low-retro-mens-shoes-njHwD3.png"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 20 },
+					{ "size": 40, "quantity": 30 },
+					{ "size": 41, "quantity": 30 },
+					{ "size": 42, "quantity": 20 }
+				],
+				"sku": "NIKE-DUNK-PANDA",
+				"price": 2900000
+			}
+		]
+	},
+	{
+		"name": "Adidas Predator Accuracy.3",
+		"slug": "adidas-predator-accuracy-3",
+		"_brandSlug": "adidas",
+		"_categorySlug": "giay-bong-da",
+		"description": "Kiểm soát bóng, sút bóng chính xác. Predator Accuracy được thiết kế để bạn làm chủ sân cỏ với bề mặt tiếp xúc bóng được tối ưu hóa.",
+		"price": 2200000,
+		"discountPrice": 1800000,
+		"rating": 4.4,
+		"numReviews": 10,
+		"isPublished": true,
+		"variants": [
+			{
+				"color": "Core Black/Pink",
+				"hexCode": "#000000",
+				"images": [
+					"https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/205b38d31980456182c6af51010375a0_9366/Giay_Predator_Accuracy.3_San_co_tu_nhien_DJen_GW4593_22_model.jpg"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 5 },
+					{ "size": 40, "quantity": 10 },
+					{ "size": 41, "quantity": 10 },
+					{ "size": 42, "quantity": 5 }
+				],
+				"sku": "ADI-PRED-ACC3",
+				"price": 2200000
+			}
+		]
+	},
+	{
+		"name": "Converse Chuck 70 Vintage Canvas",
+		"slug": "converse-chuck-70-vintage",
+		"_brandSlug": "converse",
+		"_categorySlug": "sneaker-nam",
+		"description": "Phiên bản nâng cấp của dòng Classic. Chuck 70 có đế cao su dày hơn, lót giày êm hơn và vải canvas dày dặn đậm chất vintage.",
+		"price": 1900000,
+		"discountPrice": 0,
+		"rating": 4.8,
+		"numReviews": 22,
+		"isPublished": true,
+		"variants": [
+			{
+				"color": "Parchment (Kem)",
+				"hexCode": "#FDF5E6",
+				"images": [
+					"https://www.converse.com/dw/image/v2/BJJF_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw8a6669c5/images/a_08/162062C_A_08X1.jpg?sw=964"
+				],
+				"sizes": [
+					{ "size": 38, "quantity": 5 },
+					{ "size": 39, "quantity": 10 },
+					{ "size": 40, "quantity": 10 },
+					{ "size": 41, "quantity": 10 }
+				],
+				"sku": "CON-C70-PAR",
+				"price": 1900000
+			}
+		]
+	},
+	{
+		"name": "Nike Phantom GX Academy",
+		"slug": "nike-phantom-gx-academy",
+		"_brandSlug": "nike",
+		"_categorySlug": "giay-bong-da",
+		"description": "Mở khóa kỹ năng. Nike Phantom GX mang lại cảm giác chạm bóng chân thực nhờ lớp NikeSkin mở rộng vùng sút.",
+		"price": 2300000,
+		"discountPrice": 0,
+		"rating": 4.6,
+		"numReviews": 7,
+		"isPublished": true,
+		"variants": [
+			{
+				"color": "Hyper Pink",
+				"hexCode": "#FF00FF",
+				"images": [
+					"https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/a147e851-4043-4c99-a681-797371569426/phantom-gx-academy-mg-multi-ground-soccer-cleats-P6l41V.png"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 5 },
+					{ "size": 40, "quantity": 8 },
+					{ "size": 41, "quantity": 8 },
+					{ "size": 42, "quantity": 6 }
+				],
+				"sku": "NIKE-PHANTOM-PINK",
+				"price": 2300000
+			}
+		]
+	},
+	{
+		"name": "Adidas Galaxy 6",
+		"slug": "adidas-galaxy-6",
+		"_brandSlug": "adidas",
+		"_categorySlug": "giay-chay-bo",
+		"description": "Đôi giày chạy bộ giá tốt cho người mới bắt đầu. Đế Cloudfoam êm ái, thân giày lưới thoáng khí giúp đôi chân luôn mát mẻ.",
+		"price": 1600000,
+		"discountPrice": 1200000,
+		"rating": 4.3,
+		"numReviews": 15,
+		"isPublished": true,
+		"variants": [
+			{
+				"color": "Core Black",
+				"hexCode": "#000000",
+				"images": [
+					"https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/01f40d6259024c088928ae8f00155097_9366/Giay_Galaxy_6_Djen_GW3848_01_standard.jpg"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 10 },
+					{ "size": 40, "quantity": 20 },
+					{ "size": 41, "quantity": 20 },
+					{ "size": 42, "quantity": 15 }
+				],
+				"sku": "ADI-GLX6-BLK",
+				"price": 1600000
+			}
+		]
+	},
+	{
+		"name": "Adidas Samba OG",
+		"slug": "adidas-samba-og",
+		"_brandSlug": "adidas",
+		"_categorySlug": "sneaker-nam",
+		"description": "Sinh ra trên sân cỏ, lớn lên trên đường phố. Adidas Samba OG giữ nguyên thiết kế cổ điển với da mềm và lớp phủ da lộn chữ T đặc trưng.",
+		"price": 2700000,
+		"discountPrice": 0,
+		"rating": 4.9,
+		"numReviews": 65,
+		"isPublished": true,
+		"variants": [
+			{
+				"color": "Cloud White/Core Black",
+				"hexCode": "#FFFFFF",
+				"images": [
+					"https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/b513ef67e85242a38692a721d0339665_9366/Giay_Samba_OG_trang_B75806_01_standard.jpg"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 10 },
+					{ "size": 40, "quantity": 25 },
+					{ "size": 41, "quantity": 25 },
+					{ "size": 42, "quantity": 15 }
+				],
+				"sku": "ADI-SAMBA-WHT",
+				"price": 2700000
+			},
+			{
+				"color": "Core Black/White",
+				"hexCode": "#000000",
+				"images": [
+					"https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/3bbecbdf584e40398446a8bf0117cf62_9366/Giay_Samba_OG_Djen_B75807_01_standard.jpg"
+				],
+				"sizes": [
+					{ "size": 40, "quantity": 10 },
+					{ "size": 41, "quantity": 10 },
+					{ "size": 42, "quantity": 10 }
+				],
+				"sku": "ADI-SAMBA-BLK",
+				"price": 2700000
+			}
+		]
+	},
+	{
+		"name": "Nike LeBron XX (LeBron 20)",
+		"slug": "nike-lebron-xx",
+		"_brandSlug": "nike",
+		"_categorySlug": "giay-bong-ro",
+		"description": "Thế hệ thứ 20 của King James. Một đôi giày bóng rổ cổ thấp với thiết kế nhẹ hơn, linh hoạt hơn nhưng vẫn đảm bảo khả năng chịu lực cực tốt.",
+		"price": 5400000,
+		"discountPrice": 4800000,
+		"rating": 5.0,
+		"numReviews": 12,
+		"isPublished": true,
+		"variants": [
+			{
+				"color": "Trinity (Black/Red)",
+				"hexCode": "#000000",
+				"images": [
+					"https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/e6e6e25d-4950-4560-a292-622c71027113/lebron-xx-basketball-shoes-CT1234.png"
+				],
+				"sizes": [
+					{ "size": 41, "quantity": 5 },
+					{ "size": 42, "quantity": 10 },
+					{ "size": 43, "quantity": 10 },
+					{ "size": 44, "quantity": 5 }
+				],
+				"sku": "NIKE-LB20-TRI",
+				"price": 5400000
+			}
+		]
+	},
+	{
+		"name": "New Balance 530",
+		"slug": "new-balance-530",
+		"_brandSlug": "new-balance",
+		"_categorySlug": "sneaker-nam",
+		"description": "Sự trở lại của phong cách chạy bộ những năm 2000. New Balance 530 kết hợp phong cách thường ngày với công nghệ đệm ABZORB hiện đại.",
+		"price": 2600000,
+		"discountPrice": 0,
+		"rating": 4.8,
+		"numReviews": 35,
+		"isPublished": true,
+		"variants": [
+			{
+				"color": "White/Silver Metallic",
+				"hexCode": "#C0C0C0",
+				"images": [
+					"https://nb.scene7.com/is/image/NB/mr530sg_nb_02_i?$pdpflexf2$"
+				],
+				"sizes": [
+					{ "size": 38, "quantity": 10 },
+					{ "size": 39, "quantity": 20 },
+					{ "size": 40, "quantity": 20 },
+					{ "size": 41, "quantity": 10 }
+				],
+				"sku": "NB-530-SILVER",
+				"price": 2600000
+			}
+		]
+	},
+	{
+		"name": "Puma Future Ultimate",
+		"slug": "puma-future-ultimate",
+		"_brandSlug": "puma",
+		"_categorySlug": "giay-bong-da",
+		"description": "Được các ngôi sao như Neymar Jr. tin dùng. Công nghệ FUZIONFIT360 thích ứng với hình dáng bàn chân để tạo ra sự vừa vặn hoàn hảo.",
+		"price": 4900000,
+		"discountPrice": 4200000,
+		"rating": 4.7,
+		"numReviews": 8,
+		"isPublished": true,
+		"variants": [
+			{
+				"color": "Blue Glimmer",
+				"hexCode": "#0000FF",
+				"images": [
+					"https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/107165/01/sv01/fnd/VNM/fmt/png/Gi%C3%A0y-B%C3%B3ng-%C4%90%C3%A1-Nam-Future-Ultimate-FG/AG"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 5 },
+					{ "size": 40, "quantity": 5 },
+					{ "size": 41, "quantity": 5 },
+					{ "size": 42, "quantity": 5 }
+				],
+				"sku": "PUMA-FUT-ULT-BLU",
+				"price": 4900000
+			}
+		]
+	},
+	{
+		"name": "Vans Sk8-Hi",
+		"slug": "vans-sk8-hi",
+		"_brandSlug": "vans",
+		"_categorySlug": "sneaker-nam",
+		"description": "Huyền thoại High-Top. Sk8-Hi là mẫu giày cao cổ đầu tiên mang sọc jazz stripe, bảo vệ mắt cá chân cho các skater.",
+		"price": 2100000,
+		"discountPrice": 0,
+		"rating": 4.8,
+		"numReviews": 28,
+		"isPublished": true,
+		"variants": [
+			{
+				"color": "Black/White",
+				"hexCode": "#000000",
+				"images": [
+					"https://images.vans.com/is/image/Vans/VN000D5IB8C-HERO?$583x583$"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 10 },
+					{ "size": 40, "quantity": 15 },
+					{ "size": 41, "quantity": 15 },
+					{ "size": 42, "quantity": 10 }
+				],
+				"sku": "VANS-SK8-BW",
+				"price": 2100000
+			}
+		]
+	},
+	{
+		"name": "Nike Air Max 97",
+		"slug": "nike-air-max-97",
+		"_brandSlug": "nike",
+		"_categorySlug": "sneaker-nam",
+		"description": "Lấy cảm hứng từ tàu cao tốc Nhật Bản. Nike Air Max 97 mang thiết kế lượn sóng mang tính tương lai và đệm khí full-length.",
+		"price": 4600000,
+		"discountPrice": 3990000,
+		"rating": 4.6,
+		"numReviews": 19,
+		"isPublished": true,
+		"variants": [
+			{
+				"color": "White",
+				"hexCode": "#FFFFFF",
+				"images": [
+					"https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/5c305382-9a73-45a4-9988-5c4e7235076f/air-max-97-mens-shoes-LJmK45.png"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 5 },
+					{ "size": 40, "quantity": 10 },
+					{ "size": 41, "quantity": 10 },
+					{ "size": 42, "quantity": 5 }
+				],
+				"sku": "NIKE-AM97-WHT",
+				"price": 4600000
+			}
+		]
+	},
+	{
+		"name": "Converse Run Star Motion",
+		"slug": "converse-run-star-motion",
+		"_brandSlug": "converse",
+		"_categorySlug": "sneaker-nam",
+		"description": "Sự phát triển táo bạo nhất của Chuck Taylor. Đế ngoài gợn sóng phóng đại và bọt CX giúp mang lại sự thoải mái chưa từng có.",
+		"price": 2900000,
+		"discountPrice": 0,
+		"rating": 4.5,
+		"numReviews": 15,
+		"isPublished": true,
+		"variants": [
+			{
+				"color": "Black",
+				"hexCode": "#000000",
+				"images": [
+					"https://www.converse.com/dw/image/v2/BJJF_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw15db7419/images/a_08/171545C_A_08X1.jpg?sw=964"
+				],
+				"sizes": [
+					{ "size": 37, "quantity": 5 },
+					{ "size": 38, "quantity": 10 },
+					{ "size": 39, "quantity": 10 },
+					{ "size": 40, "quantity": 10 }
+				],
+				"sku": "CON-RSM-BLK",
+				"price": 2900000
+			}
+		]
+	},
+	{
+		"name": "Adidas Adizero Adios Pro 3",
+		"slug": "adidas-adizero-adios-pro-3",
+		"_brandSlug": "adidas",
+		"_categorySlug": "giay-chay-bo",
+		"description": "Vũ khí của những kỷ lục. Giày chạy đường dài đỉnh cao với thanh năng lượng ENERGYRODS 2.0 giúp bạn bứt phá mọi giới hạn.",
+		"price": 6000000,
+		"discountPrice": 0,
+		"rating": 4.9,
+		"numReviews": 5,
+		"isPublished": true,
+		"variants": [
+			{
+				"color": "Pulse Mint",
+				"hexCode": "#00FF7F",
+				"images": [
+					"https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/20b66c4068564e97a31aaf5200f3f2a8_9366/Giay_Adizero_Adios_Pro_3_Xanh_luc_GV7067_01_standard.jpg"
+				],
+				"sizes": [
+					{ "size": 40, "quantity": 3 },
+					{ "size": 41, "quantity": 5 },
+					{ "size": 42, "quantity": 5 }
+				],
+				"sku": "ADI-PRO3-MINT",
+				"price": 6000000
+			}
+		]
+	},
+	{
+		"name": "New Balance 9060",
+		"slug": "new-balance-9060",
+		"_brandSlug": "new-balance",
+		"_categorySlug": "sneaker-nam",
+		"description": "Biểu hiện mới của phong cách tinh tế và thiết kế dẫn đầu xu hướng. 9060 diễn giải lại các yếu tố quen thuộc của dòng 99X.",
+		"price": 3800000,
+		"discountPrice": 0,
+		"rating": 4.7,
+		"numReviews": 10,
+		"isPublished": true,
+		"variants": [
+			{
+				"color": "Rain Cloud",
+				"hexCode": "#808080",
+				"images": [
+					"https://nb.scene7.com/is/image/NB/u9060gry_nb_02_i?$pdpflexf2$"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 5 },
+					{ "size": 40, "quantity": 10 },
+					{ "size": 41, "quantity": 10 },
+					{ "size": 42, "quantity": 8 }
+				],
+				"sku": "NB-9060-RAIN",
+				"price": 3800000
+			}
+		]
+	},
+	{
+		"name": "Puma Velocity Nitro 2",
+		"slug": "puma-velocity-nitro-2",
+		"_brandSlug": "puma",
+		"_categorySlug": "giay-chay-bo",
+		"description": "Giày chạy bộ tất-cả-trong-một. Đệm NITRO FOAM mang lại khả năng phản hồi và êm ái vượt trội trong một gói cực nhẹ.",
+		"price": 2990000,
+		"discountPrice": 2500000,
+		"rating": 4.6,
+		"numReviews": 18,
+		"isPublished": true,
+		"variants": [
+			{
+				"color": "Sunset Glow",
+				"hexCode": "#FF4500",
+				"images": [
+					"https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/195337/01/sv01/fnd/VNM/fmt/png/Gi%C3%A0y-Ch%E1%BA%A1y-B%E1%BB%99-Nam-Velocity-NITRO-2"
+				],
+				"sizes": [
+					{ "size": 40, "quantity": 8 },
+					{ "size": 41, "quantity": 12 },
+					{ "size": 42, "quantity": 10 }
+				],
+				"sku": "PUMA-VELO2-SUN",
+				"price": 2990000
+			}
+		]
+	},
+	{
+		"name": "Puma Mayze Classic Women's",
+		"slug": "puma-mayze-classic-women",
+		"_brandSlug": "puma",
+		"_categorySlug": "sneaker-nu",
+		"description": "Dành cho những cô nàng cá tính. Puma Mayze có thiết kế đế xuồng (platform) táo bạo, giúp tôn dáng và mang lại vẻ ngoài thời thượng.",
+		"price": 2600000,
+		"discountPrice": 0,
+		"rating": 4.8,
+		"numReviews": 32,
+		"isPublished": true,
+		"variants": [
+			{
+				"color": "White/Black",
+				"hexCode": "#FFFFFF",
+				"images": [
+					"https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/384463/01/sv01/fnd/VNM/fmt/png/Gi%C3%A0y-Sneakers-N%E1%BB%AF-Mayze-Classic"
+				],
+				"sizes": [
+					{ "size": 36, "quantity": 10 },
+					{ "size": 37, "quantity": 15 },
+					{ "size": 38, "quantity": 15 },
+					{ "size": 39, "quantity": 5 }
+				],
+				"sku": "PUMA-MAYZE-WHT",
+				"price": 2600000
+			}
+		]
+	},
+	{
+		"name": "Nike Air Max 270",
+		"slug": "nike-air-max-270",
+		"_brandSlug": "nike",
+		"_categorySlug": "sneaker-nam",
+		"description": "Đôi giày Air Max đầu tiên dành riêng cho nhu cầu đi lại hàng ngày. Với gót đệm khí siêu lớn, Air Max 270 mang lại cảm giác êm ái như đi trên mây.",
+		"price": 3800000,
+		"discountPrice": 3400000,
+		"rating": 4.7,
+		"numReviews": 55,
+		"isPublished": true,
+		"variants": [
+			{
+				"color": "Black/White",
+				"hexCode": "#000000",
+				"images": [
+					"https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/awjgulaomsghj57zkv2o/air-max-270-mens-shoes-KkLcGR.png"
+				],
+				"sizes": [
+					{ "size": 40, "quantity": 10 },
+					{ "size": 41, "quantity": 20 },
+					{ "size": 42, "quantity": 15 },
+					{ "size": 43, "quantity": 5 }
+				],
+				"sku": "NIKE-AM270-BLK",
+				"price": 3800000
+			}
+		]
+	},
+	{
+		"name": "Adidas Forum Low",
+		"slug": "adidas-forum-low",
+		"_brandSlug": "adidas",
+		"_categorySlug": "sneaker-nam",
+		"description": "Hơn cả một đôi giày, đó là một tuyên ngôn. Adidas Forum Low thập niên 80 trở lại với quấn dán cổ điển và chất liệu da cao cấp.",
+		"price": 2500000,
+		"discountPrice": 0,
+		"rating": 4.6,
+		"numReviews": 28,
+		"isPublished": true,
+		"variants": [
+			{
+				"color": "Cloud White/Royal Blue",
+				"hexCode": "#0000FF",
+				"images": [
+					"https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/7c9bdfc62ebf477cb461ac64010027a7_9366/Giay_Forum_Low_trang_FY7757_01_standard.jpg"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 5 },
+					{ "size": 40, "quantity": 10 },
+					{ "size": 41, "quantity": 15 },
+					{ "size": 42, "quantity": 10 }
+				],
+				"sku": "ADI-FORUM-BLU",
+				"price": 2500000
+			}
+		]
+	},
+	{
+		"name": "New Balance 2002R",
+		"slug": "new-balance-2002r",
+		"_brandSlug": "new-balance",
+		"_categorySlug": "sneaker-nam",
+		"description": "Cảm hứng chạy bộ những năm 2010 được tái hiện. Phần trên bằng da lộn cao cấp kết hợp với đế N-ergy hấp thụ sốc tuyệt vời.",
+		"price": 3600000,
+		"discountPrice": 0,
+		"rating": 4.9,
+		"numReviews": 40,
+		"isPublished": true,
+		"variants": [
+			{
+				"color": "Grey/Silver",
+				"hexCode": "#808080",
+				"images": [
+					"https://nb.scene7.com/is/image/NB/m2002rcc_nb_02_i?$pdpflexf2$"
+				],
+				"sizes": [
+					{ "size": 40, "quantity": 8 },
+					{ "size": 41, "quantity": 12 },
+					{ "size": 42, "quantity": 12 },
+					{ "size": 43, "quantity": 6 }
+				],
+				"sku": "NB-2002R-GREY",
+				"price": 3600000
+			}
+		]
+	},
+	{
+		"name": "Vans Authentic",
+		"slug": "vans-authentic",
+		"_brandSlug": "vans",
+		"_categorySlug": "sneaker-nam",
+		"description": "Đôi giày Vans đầu tiên ra đời năm 1966. Thiết kế cổ thấp, dây buộc đơn giản nhưng vẫn giữ nguyên sức hút qua nhiều thế hệ.",
+		"price": 1350000,
+		"discountPrice": 1150000,
+		"rating": 4.8,
+		"numReviews": 100,
+		"isPublished": true,
+		"variants": [
+			{
+				"color": "Red",
+				"hexCode": "#FF0000",
+				"images": [
+					"https://images.vans.com/is/image/Vans/VN000EE3RED-HERO?$583x583$"
+				],
+				"sizes": [
+					{ "size": 36, "quantity": 5 },
+					{ "size": 37, "quantity": 5 },
+					{ "size": 38, "quantity": 10 },
+					{ "size": 39, "quantity": 10 },
+					{ "size": 40, "quantity": 10 }
+				],
+				"sku": "VANS-AUTH-RED",
+				"price": 1350000
+			}
+		]
+	},
+	{
+		"name": "Nike KD15",
+		"slug": "nike-kd15",
+		"_brandSlug": "nike",
+		"_categorySlug": "giay-bong-ro",
+		"description": "Giày thi đấu của Kevin Durant. Loại bỏ các lớp vật liệu thừa để giảm trọng lượng tối đa, giúp bạn di chuyển thanh thoát và bền bỉ suốt trận đấu.",
+		"price": 4200000,
+		"discountPrice": 3800000,
+		"rating": 4.7,
+		"numReviews": 15,
+		"isPublished": true,
+		"variants": [
+			{
+				"color": "Psychic Purple",
+				"hexCode": "#800080",
+				"images": [
+					"https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/e3860550-9d10-482f-90e8-070104975560/kd15-basketball-shoes-M30403.png"
+				],
+				"sizes": [
+					{ "size": 41, "quantity": 5 },
+					{ "size": 42, "quantity": 10 },
+					{ "size": 43, "quantity": 10 },
+					{ "size": 44, "quantity": 5 }
+				],
+				"sku": "NIKE-KD15-PURP",
+				"price": 4200000
+			}
+		]
+	},
+	{
+		"name": "Adidas X Crazyfast.3",
+		"slug": "adidas-x-crazyfast-3",
+		"_brandSlug": "adidas",
+		"_categorySlug": "giay-bong-da",
+		"description": "Thay đổi cục diện trận đấu trong nháy mắt. Đôi giày đá bóng này giúp bạn bứt tốc nhờ kết cấu đinh giày chuyên dụng cho sân cỏ nhân tạo.",
+		"price": 2000000,
+		"discountPrice": 0,
+		"rating": 4.5,
+		"numReviews": 9,
+		"isPublished": true,
+		"variants": [
+			{
+				"color": "White/Lucid Lemon",
+				"hexCode": "#FFFFE0",
+				"images": [
+					"https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/257321689228471b876daf6101031359_9366/Giay_X_Crazyfast.3_San_co_nhan_tao_trang_ID9337_22_model.jpg"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 8 },
+					{ "size": 40, "quantity": 15 },
+					{ "size": 41, "quantity": 15 },
+					{ "size": 42, "quantity": 10 }
+				],
+				"sku": "ADI-XCRAZY-WHT",
+				"price": 2000000
+			}
+		]
+	},
+	{
+		"name": "Converse Chuck Taylor All Star Move",
+		"slug": "converse-chuck-taylor-move",
+		"_brandSlug": "converse",
+		"_categorySlug": "sneaker-nu",
+		"description": "Phiên bản dành cho phái nữ với đế platform siêu nhẹ. Vừa tăng chiều cao, vừa giữ được sự thoải mái và phong cách Chuck Taylor cổ điển.",
+		"price": 2100000,
+		"discountPrice": 1900000,
+		"rating": 4.9,
+		"numReviews": 42,
+		"isPublished": true,
+		"variants": [
+			{
+				"color": "Black/White",
+				"hexCode": "#000000",
+				"images": [
+					"https://www.converse.com/dw/image/v2/BJJF_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw1872df0d/images/a_08/568497C_A_08X1.jpg?sw=964"
+				],
+				"sizes": [
+					{ "size": 36, "quantity": 10 },
+					{ "size": 37, "quantity": 15 },
+					{ "size": 38, "quantity": 10 }
+				],
+				"sku": "CON-MOVE-BLK",
+				"price": 2100000
+			}
+		]
+	},
+	{
+		"name": "New Balance Fresh Foam X 1080v12",
+		"slug": "new-balance-fresh-foam-1080v12",
+		"_brandSlug": "new-balance",
+		"_categorySlug": "giay-chay-bo",
+		"description": "Nếu bạn chỉ được chọn một đôi giày chạy bộ, hãy chọn 1080. Đệm Fresh Foam X mang lại sự chuyển tiếp mượt mà và êm ái nhất.",
+		"price": 4100000,
+		"discountPrice": 0,
+		"rating": 4.8,
+		"numReviews": 22,
+		"isPublished": true,
+		"variants": [
+			{
+				"color": "Vintage Indigo",
+				"hexCode": "#4B0082",
+				"images": [
+					"https://nb.scene7.com/is/image/NB/w1080h12_nb_02_i?$pdpflexf2$"
+				],
+				"sizes": [
+					{ "size": 40, "quantity": 5 },
+					{ "size": 41, "quantity": 10 },
+					{ "size": 42, "quantity": 10 }
+				],
+				"sku": "NB-1080-IND",
+				"price": 4100000
+			}
+		]
+	},
+	{
+		"name": "Nike Tiempo Legend 9 Academy",
+		"slug": "nike-tiempo-legend-9",
+		"_brandSlug": "nike",
+		"_categorySlug": "giay-bong-da",
+		"description": "Một trong những đôi Tiempo nhẹ nhất lịch sử. Phần trên bằng da bê mềm mại với các gờ nổi bằng bọt giúp bạn sút bóng chính xác hơn.",
+		"price": 1950000,
+		"discountPrice": 0,
+		"rating": 4.4,
+		"numReviews": 18,
+		"isPublished": true,
+		"variants": [
+			{
+				"color": "White/Blue",
+				"hexCode": "#FFFFFF",
+				"images": [
+					"https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/a1e74567-54b1-46c5-a6e5-407513b19280/tiempo-legend-9-academy-mg-multi-ground-soccer-cleats-K1T7C1.png"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 10 },
+					{ "size": 40, "quantity": 20 },
+					{ "size": 41, "quantity": 20 },
+					{ "size": 42, "quantity": 10 }
+				],
+				"sku": "NIKE-TIEMPO-WHT",
+				"price": 1950000
+			}
+		]
+	},
+	{
+		"name": "Nike Air Force 1 '07",
+		"slug": "nike-air-force-1-07",
+		"_brandSlug": "nike",
+		"_categorySlug": "sneaker-nam",
+		"description": "Huyền thoại sống mãi. Nike Air Force 1 '07 giữ lại những gì tốt nhất của bản gốc: lớp da bền bỉ, màu sắc trắng tinh khôi và độ êm ái tuyệt vời.",
+		"price": 2900000,
+		"discountPrice": 2600000,
+		"rating": 5,
+		"numReviews": 12,
+		"isPublished": true,
+		"variants": [
+			{
+				"color": "Trắng (White)",
+				"hexCode": "#FFFFFF",
+				"images": [
+					"https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/b7d9211c-26e7-431a-ac24-b0540fb3c00f/air-force-1-07-shoes-WrLlWX.png",
+					"https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/a0a300da-2e3c-4cf2-9653-0604e76a5b6e/air-force-1-07-shoes-WrLlWX.png"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 10 },
+					{ "size": 40, "quantity": 25 },
+					{ "size": 41, "quantity": 15 },
+					{ "size": 42, "quantity": 5 }
+				],
+				"sku": "NIKE-AF1-WHT-001",
+				"price": 2900000
+			},
+			{
+				"color": "Đen (Black)",
+				"hexCode": "#000000",
+				"images": [
+					"https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/fc4622c4-2769-4665-aa6e-a2c06d316642/air-force-1-07-shoes-WrLlWX.png"
+				],
+				"sizes": [
+					{ "size": 40, "quantity": 8 },
+					{ "size": 41, "quantity": 12 },
+					{ "size": 42, "quantity": 20 }
+				],
+				"sku": "NIKE-AF1-BLK-002",
+				"price": 2900000
+			}
+		]
+	},
+	{
+		"name": "Adidas Ultraboost Light",
+		"slug": "adidas-ultraboost-light",
+		"_brandSlug": "adidas",
+		"_categorySlug": "giay-chay-bo",
+		"description": "Trải nghiệm năng lượng đỉnh cao với Ultraboost Light mới, đôi Ultraboost nhẹ nhất của chúng tôi từ trước đến nay. Phản hồi năng lượng đáng kinh ngạc.",
+		"price": 5200000,
+		"discountPrice": 0,
+		"rating": 4.8,
+		"numReviews": 8,
+		"isPublished": true,
+		"variants": [
+			{
+				"color": "Cloud White",
+				"hexCode": "#F0F0F0",
+				"images": [
+					"https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/0fbed4646c1d46e0aae0afbc00f91e9e_9366/Giay_Ultraboost_Light_trang_HQ6351_01_standard.jpg",
+					"https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/a95f08836526437198a2afbc00f92c1c_9366/Giay_Ultraboost_Light_trang_HQ6351_02_standard_hover.jpg"
+				],
+				"sizes": [
+					{ "size": 40, "quantity": 10 },
+					{ "size": 41, "quantity": 10 },
+					{ "size": 42, "quantity": 10 },
+					{ "size": 43, "quantity": 5 }
+				],
+				"sku": "ADIDAS-UB-LGT-WHT",
+				"price": 5200000
+			}
+		]
+	},
+	{
+		"name": "Vans Old Skool Classic",
+		"slug": "vans-old-skool-classic",
+		"_brandSlug": "vans",
+		"_categorySlug": "sneaker-nam",
+		"description": "Đôi giày skate cổ điển đầu tiên mang biểu tượng sọc bên iconic. Vans Old Skool là mẫu giày dây buộc cổ thấp với thân giày bằng vải canvas và da lộn bền bỉ.",
+		"price": 1900000,
+		"discountPrice": 1750000,
+		"rating": 4.9,
+		"numReviews": 45,
+		"isPublished": true,
+		"variants": [
+			{
+				"color": "Black/White",
+				"hexCode": "#333333",
+				"images": [
+					"https://images.vans.com/is/image/Vans/VN000D3HY28-HERO?$583x583$",
+					"https://images.vans.com/is/image/Vans/VN000D3HY28-ALT1?$583x583$"
+				],
+				"sizes": [
+					{ "size": 36, "quantity": 5 },
+					{ "size": 37, "quantity": 5 },
+					{ "size": 38, "quantity": 10 },
+					{ "size": 39, "quantity": 15 },
+					{ "size": 40, "quantity": 20 },
+					{ "size": 41, "quantity": 20 },
+					{ "size": 42, "quantity": 10 }
+				],
+				"sku": "VANS-OS-BW-001",
+				"price": 1900000
+			}
+		]
+	},
+	{
+		"name": "Converse Chuck Taylor All Star High Top",
+		"slug": "converse-chuck-taylor-all-star-high",
+		"_brandSlug": "converse",
+		"_categorySlug": "sneaker-nam",
+		"description": "Đôi giày sneaker mang tính biểu tượng nhất thế giới, được công nhận ở bất cứ đâu nhờ hình dáng không thể nhầm lẫn và miếng vá mắt cá chân trung tâm.",
+		"price": 1500000,
+		"discountPrice": 0,
+		"rating": 4.7,
+		"numReviews": 30,
+		"isPublished": true,
+		"variants": [
+			{
+				"color": "Classic Black",
+				"hexCode": "#1A1A1A",
+				"images": [
+					"https://www.converse.com/dw/image/v2/BJJF_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw60471960/images/a_08/M9160_A_08X1.jpg?sw=964",
+					"https://www.converse.com/dw/image/v2/BJJF_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw10626300/images/c_08/M9160_C_08X1.jpg?sw=964"
+				],
+				"sizes": [
+					{ "size": 38, "quantity": 10 },
+					{ "size": 39, "quantity": 15 },
+					{ "size": 40, "quantity": 20 },
+					{ "size": 41, "quantity": 20 },
+					{ "size": 42, "quantity": 10 }
+				],
+				"sku": "CON-CTAS-HI-BLK",
+				"price": 1500000
+			},
+			{
+				"color": "Red",
+				"hexCode": "#FF0000",
+				"images": [
+					"https://www.converse.com/dw/image/v2/BJJF_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dwc622502c/images/a_08/M9621_A_08X1.jpg?sw=964"
+				],
+				"sizes": [
+					{ "size": 38, "quantity": 5 },
+					{ "size": 39, "quantity": 5 },
+					{ "size": 40, "quantity": 5 }
+				],
+				"sku": "CON-CTAS-HI-RED",
+				"price": 1500000
+			}
+		]
+	},
+	{
+		"name": "Nike Zoom Mercurial Superfly 9",
+		"slug": "nike-zoom-mercurial-superfly-9",
+		"_brandSlug": "nike",
+		"_categorySlug": "giay-bong-da",
+		"description": "Nhanh hơn bao giờ hết. Được trang bị bộ đệm Zoom Air dành riêng cho bóng đá giúp bạn bứt tốc nhanh chóng trên sân cỏ.",
+		"price": 7500000,
+		"discountPrice": 6800000,
+		"rating": 5.0,
+		"numReviews": 3,
+		"isPublished": true,
+		"variants": [
+			{
+				"color": "Yellow Strike",
+				"hexCode": "#FFEE00",
+				"images": [
+					"https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/e9d41cd4-a2c5-438d-984f-e60d906f5271/zoom-mercurial-superfly-9-elite-fg-firm-ground-soccer-cleats-sb8gjk.png"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 2 },
+					{ "size": 40, "quantity": 5 },
+					{ "size": 41, "quantity": 5 },
+					{ "size": 42, "quantity": 3 }
+				],
+				"sku": "NIKE-MERC-SF9-YEL",
+				"price": 7500000
+			}
+		]
+	},
+	{
+		"name": "Puma MB.02 Rookie of the Year",
+		"slug": "puma-mb-02-rookie",
+		"_brandSlug": "puma",
+		"_categorySlug": "giay-bong-ro",
+		"description": "Giày Signature của LaMelo Ball. Thiết kế bùng nổ, hỗ trợ tối đa cho các pha crossover và bật nhảy.",
+		"price": 3800000,
+		"discountPrice": 0,
+		"rating": 4.5,
+		"numReviews": 5,
+		"isPublished": true,
+		"variants": [
+			{
+				"color": "Blue Atoll",
+				"hexCode": "#00FFFF",
+				"images": [
+					"https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/378284/01/sv01/fnd/VNM/fmt/png/Gi%C3%A0y-B%C3%B3ng-R%E1%BB%95-Nam-MB.02-Rookie-of-the-Year"
+				],
+				"sizes": [
+					{ "size": 41, "quantity": 8 },
+					{ "size": 42, "quantity": 8 },
+					{ "size": 43, "quantity": 6 },
+					{ "size": 44, "quantity": 2 }
+				],
+				"sku": "PUMA-MB02-BLU",
+				"price": 3800000
+			}
+		]
+	},
+	{
+		"name": "New Balance 574 Core",
+		"slug": "new-balance-574-core",
+		"_brandSlug": "new-balance",
+		"_categorySlug": "sneaker-nam",
+		"description": "574 được thiết kế để trở thành một đôi giày đáng tin cậy cho nhiều mục đích sử dụng khác nhau. Nó không phải là công nghệ cách mạng nhất, nhưng nó là biểu tượng bền bỉ.",
+		"price": 2400000,
+		"discountPrice": 0,
+		"rating": 4.6,
+		"numReviews": 18,
+		"isPublished": true,
+		"variants": [
+			{
+				"color": "Grey",
+				"hexCode": "#808080",
+				"images": [
+					"https://nb.scene7.com/is/image/NB/ml574evg_nb_02_i?$pdpflexf2$"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 10 },
+					{ "size": 40, "quantity": 15 },
+					{ "size": 41, "quantity": 15 },
+					{ "size": 42, "quantity": 10 }
+				],
+				"sku": "NB-574-GRY-CORE",
+				"price": 2400000
+			},
+			{
+				"color": "Navy",
+				"hexCode": "#000080",
+				"images": [
+					"https://nb.scene7.com/is/image/NB/ml574evn_nb_02_i?$pdpflexf2$"
+				],
+				"sizes": [
+					{ "size": 40, "quantity": 5 },
+					{ "size": 41, "quantity": 5 },
+					{ "size": 42, "quantity": 5 }
+				],
+				"sku": "NB-574-NVY-CORE",
+				"price": 2400000
+			}
+		]
+	}
+]

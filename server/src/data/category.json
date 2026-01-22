@@ -1,0 +1,75 @@
+[
+	{
+		"_id": "64b0f1c98a4a1b0011111111",
+		"name": "Giày Nam",
+		"slug": "giay-nam",
+		"image": "https://res.cloudinary.com/ddfi4fdao/image/upload/v1769046101/giay-nam_wkifxj.jpg",
+		"description": "Các bộ sưu tập giày dành cho phái mạnh",
+		"parentId": null
+	},
+	{
+		"_id": "64b0f1c98a4a1b0022222222",
+		"name": "Giày Nữ",
+		"slug": "giay-nu",
+		"image": "https://res.cloudinary.com/ddfi4fdao/image/upload/v1769046032/giay-nu_mgde8b.jpg",
+		"description": "Thời trang giày dép dành cho phái đẹp",
+		"parentId": null
+	},
+	{
+		"_id": "64b0f1c98a4a1b0033333333",
+		"name": "Giày Thể Thao",
+		"slug": "giay-the-thao",
+		"image": "https://res.cloudinary.com/ddfi4fdao/image/upload/v1769045623/giay-the-thao_w9mza4.jpg",
+		"description": "Giày chuyên dụng cho luyện tập và thi đấu",
+		"parentId": null
+	},
+	{
+		"name": "Sneaker Nam",
+		"slug": "sneaker-nam",
+		"image": "https://res.cloudinary.com/ddfi4fdao/image/upload/v1769045475/sneaker-nam_ix6rns.jpg",
+		"description": "Giày thể thao thời trang cho nam",
+		"parentId": "64b0f1c98a4a1b0011111111"
+	},
+	{
+		"name": "Giày Tây Nam",
+		"slug": "giay-tay-nam",
+		"image": "https://res.cloudinary.com/ddfi4fdao/image/upload/v1769045530/giay-tay-nam_ec78z6.jpg",
+		"description": "Giày da sang trọng cho công sở và tiệc tùng",
+		"parentId": "64b0f1c98a4a1b0011111111"
+	},
+	{
+		"name": "Sneaker Nữ",
+		"slug": "sneaker-nu",
+		"image": "https://res.cloudinary.com/ddfi4fdao/image/upload/v1769076327/sneakerhub/eexgkd73r2zi87rfnksy.jpg",
+		"description": "Phong cách năng động, trẻ trung",
+		"parentId": "64b0f1c98a4a1b0022222222"
+	},
+	{
+		"name": "Sandal Nữ",
+		"slug": "sandal-nu",
+		"image": "https://res.cloudinary.com/ddfi4fdao/image/upload/v1769045811/sandal-nu_o1tchd.jpg",
+		"description": "Thoải mái cho mùa hè",
+		"parentId": "64b0f1c98a4a1b0022222222"
+	},
+	{
+		"name": "Giày Chạy Bộ",
+		"slug": "giay-chay-bo",
+		"image": "https://res.cloudinary.com/ddfi4fdao/image/upload/v1769045850/giay-chay-bo_nck9hc.jpg",
+		"description": "Thiết kế nhẹ, êm ái cho runner",
+		"parentId": "64b0f1c98a4a1b0033333333"
+	},
+	{
+		"name": "Giày Bóng Rổ",
+		"slug": "giay-bong-ro",
+		"image": "https://res.cloudinary.com/ddfi4fdao/image/upload/v1769045975/giay-bong-ro_odqo8s.jpg",
+		"description": "Bám sàn tốt, bảo vệ cổ chân",
+		"parentId": "64b0f1c98a4a1b0033333333"
+	},
+	{
+		"name": "Giày Bóng Đá",
+		"slug": "giay-bong-da",
+		"image": "https://res.cloudinary.com/ddfi4fdao/image/upload/v1769045980/giay-bong-da_ekuhbp.jpg",
+		"description": "Tăng cường kiểm soát bóng trên sân cỏ",
+		"parentId": "64b0f1c98a4a1b0033333333"
+	}
+]
