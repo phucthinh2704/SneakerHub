@@ -31,24 +31,10 @@
 		"parentId": "64b0f1c98a4a1b0011111111"
 	},
 	{
-		"name": "Giày Tây Nam",
-		"slug": "giay-tay-nam",
-		"image": "https://res.cloudinary.com/ddfi4fdao/image/upload/v1769045530/giay-tay-nam_ec78z6.jpg",
-		"description": "Giày da sang trọng cho công sở và tiệc tùng",
-		"parentId": "64b0f1c98a4a1b0011111111"
-	},
-	{
 		"name": "Sneaker Nữ",
 		"slug": "sneaker-nu",
 		"image": "https://res.cloudinary.com/ddfi4fdao/image/upload/v1769076327/sneakerhub/eexgkd73r2zi87rfnksy.jpg",
 		"description": "Phong cách năng động, trẻ trung",
-		"parentId": "64b0f1c98a4a1b0022222222"
-	},
-	{
-		"name": "Sandal Nữ",
-		"slug": "sandal-nu",
-		"image": "https://res.cloudinary.com/ddfi4fdao/image/upload/v1769045811/sandal-nu_o1tchd.jpg",
-		"description": "Thoải mái cho mùa hè",
 		"parentId": "64b0f1c98a4a1b0022222222"
 	},
 	{

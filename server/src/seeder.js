@@ -19,7 +19,7 @@ const importData = async () => {
         
         // Đọc dữ liệu từ file JSON
         const productsRaw = JSON.parse(
-            fs.readFileSync(`${__dirname}/product_test.json`, "utf-8")
+            fs.readFileSync(`${__dirname}/product.json`, "utf-8")
         );
 
         console.log("⏳ Đang chuẩn bị dữ liệu...");
