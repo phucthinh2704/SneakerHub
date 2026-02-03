@@ -1,5 +1,6 @@
 const Product = require("../models/Product");
 const Category = require("../models/Category");
+const Brand = require("../models/Brand");
 const slugify = require("../utils/slugify");
 
 // --- 1. LẤY DANH SÁCH SẢN PHẨM (Có Lọc, Phân trang, Sắp xếp) ---
@@ -9,43 +10,57 @@ const getProducts = async (req, res) => {
 		const pageSize = Number(req.query.limit) || 12;
 		const page = Number(req.query.page) || 1;
 
-		// 1. Xử lý Keyword search
+		// 1. Keyword search
 		const keyword = req.query.keyword
 			? { name: { $regex: req.query.keyword, $options: "i" } }
 			: {};
 
 		const filter = { ...keyword, isPublished: true };
 
-		// 2. Xử lý Lọc theo Brand
-		if (req.query.brand) filter.brand = req.query.brand;
+		// --- 2. SỬA: LỌC THEO BRAND (DÙNG SLUG) ---
+		if (req.query.brand) {
+			// Client gửi lên: ?brand=nike,adidas
+			const brandSlugs = req.query.brand.split(",");
 
-		// --- 3. XỬ LÝ LỌC CATEGORY ---
+			// Tìm các Brand có slug trùng khớp
+			const brands = await Brand.find({
+				slug: { $in: brandSlugs },
+			}).select("_id");
+
+			// Lấy danh sách ID thật
+			const brandIds = brands.map((b) => b._id);
+
+			if (brandIds.length > 0) {
+				filter.brand = { $in: brandIds };
+			}
+		}
+
+		// --- 3. SỬA: LỌC THEO CATEGORY (DÙNG SLUG) ---
 		if (req.query.category) {
-			// Tìm category cha dựa trên ID gửi lên
-			const currentCategory = await Category.findById(req.query.category);
+			// Tìm category cha dựa trên SLUG
+			const currentCategory = await Category.findOne({
+				slug: req.query.category,
+			});
 
 			if (currentCategory) {
-				// Tìm tất cả category con có parentId là ID này
+				// Tìm category con (nếu có)
 				const childCategories = await Category.find({
 					parentId: currentCategory._id,
 				});
 
-				// Tạo mảng chứa ID cha + tất cả ID con
-				// Ví dụ: [ID_CHA, ID_CON_1, ID_CON_2]
 				const categoryIds = [
 					currentCategory._id,
 					...childCategories.map((c) => c._id),
 				];
 
-				// Dùng toán tử $in của MongoDB để tìm sản phẩm thuộc bất kỳ ID nào trong mảng
 				filter.category = { $in: categoryIds };
 			} else {
-				// Trường hợp gửi ID bậy bạ không tồn tại -> Vẫn gán để query trả về rỗng
-				filter.category = req.query.category;
+				// Nếu slug không tồn tại -> Gán ID giả để không ra kết quả nào
+				filter.category = "000000000000000000000000";
 			}
 		}
 
-		// 4. Lọc theo Giá
+		// 4. Lọc theo Giá (Giữ nguyên)
 		if (req.query.minPrice || req.query.maxPrice) {
 			filter.price = {};
 			if (req.query.minPrice)
@@ -54,12 +69,12 @@ const getProducts = async (req, res) => {
 				filter.price.$lte = Number(req.query.maxPrice);
 		}
 
-		// 5. Lọc theo Rating
+		// 5. Lọc theo Rating (Giữ nguyên)
 		if (req.query.rating) {
 			filter.rating = { $gte: Number(req.query.rating) };
 		}
 
-		// 6. Sắp xếp
+		// 6. Sắp xếp (Giữ nguyên)
 		let sortOption = { createdAt: -1 };
 		if (req.query.sort) {
 			switch (req.query.sort) {
@@ -75,9 +90,6 @@ const getProducts = async (req, res) => {
 				case "oldest":
 					sortOption = { createdAt: 1 };
 					break;
-				case "name_asc":
-					sortOption = { name: 1 };
-					break;
 				default:
 					sortOption = { createdAt: -1 };
 			}
@@ -86,7 +98,7 @@ const getProducts = async (req, res) => {
 		const count = await Product.countDocuments(filter);
 		const products = await Product.find(filter)
 			.populate("category", "name slug")
-			.populate("brand", "name logo")
+			.populate("brand", "name logo slug")
 			.sort(sortOption)
 			.limit(pageSize)
 			.skip(pageSize * (page - 1));

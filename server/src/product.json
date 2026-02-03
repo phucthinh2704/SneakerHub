@@ -15,7 +15,11 @@
 				"color": "Black/White",
 				"hexCode": "#000000",
 				"images": [
-					"https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/89f2b346-601e-42c2-901d-5572f4370600/air-zoom-pegasus-40-road-running-shoes-Q5F0mC.png"
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770014722/1_fyhhw6.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770014722/5_qoqgcb.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770014722/3_d3bisq.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770014722/4_fcark2.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770014722/2_dh3dmz.jpg"
 				],
 				"sizes": [
 					{ "size": 40, "quantity": 10 },
@@ -24,6 +28,25 @@
 					{ "size": 43, "quantity": 5 }
 				],
 				"sku": "NIKE-PEG40-BLK",
+				"price": 3519000
+			},
+			{
+				"color": "White",
+				"hexCode": "#FFFFFF",
+				"images": [
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770081933/1_hrmshx.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770082004/5_bihdn2.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770081998/4_tdwgv9.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770081955/3_thw8e5.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770081937/2_ga6iwb.jpg"
+				],
+				"sizes": [
+					{ "size": 40, "quantity": 10 },
+					{ "size": 41, "quantity": 15 },
+					{ "size": 42, "quantity": 15 },
+					{ "size": 43, "quantity": 5 }
+				],
+				"sku": "NIKE-PEG40-WHT",
 				"price": 3519000
 			}
 		]
@@ -44,7 +67,11 @@
 				"color": "White/Green",
 				"hexCode": "#FFFFFF",
 				"images": [
-					"https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/b47d77dd6f9547b992f2a9690129ac87_9366/Giay_Stan_Smith_trang_M20324_01_standard.jpg"
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770015906/1_vwdlih.avif",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770015907/4_n3tqhm.avif",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770015907/5_jzvv0h.avif",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770015322/2_f85gqn.avif",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770015907/3_k7duks.avif"
 				],
 				"sizes": [
 					{ "size": 38, "quantity": 10 },
@@ -73,7 +100,11 @@
 				"color": "Red/White",
 				"hexCode": "#D32F2F",
 				"images": [
-					"https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/374915/02/sv01/fnd/VNM/fmt/png/Gi%C3%A0y-Sneakers-Unisex-Suede-Classic-XXI"
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770015190/1_eyv8a0.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770015210/3_ixqtxe.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770015191/2_k9lafr.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770015210/4_h9im6r.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770015210/5_uthloi.webp"
 				],
 				"sizes": [
 					{ "size": 39, "quantity": 5 },
@@ -87,7 +118,11 @@
 				"color": "Black/White",
 				"hexCode": "#000000",
 				"images": [
-					"https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/374915/01/sv01/fnd/VNM/fmt/png/Gi%C3%A0y-Sneakers-Unisex-Suede-Classic-XXI"
+					"https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/374915/01/sv01/fnd/VNM/fmt/png/Gi%C3%A0y-Sneakers-Unisex-Suede-Classic-XXI",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770015100/2_n8neqn.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770015100/1_cmpbfu.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770015101/4_ew0af2.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770015100/3_hdd0mk.webp"
 				],
 				"sizes": [
 					{ "size": 40, "quantity": 8 },
@@ -115,7 +150,10 @@
 				"color": "Sea Salt/Rust",
 				"hexCode": "#F5F5DC",
 				"images": [
-					"https://nb.scene7.com/is/image/NB/ms327cgh_nb_02_i?$pdpflexf2$"
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770016451/2_atau0m.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770016451/1_rx2opj.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770016452/4_s5psgb.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770016452/3_sulppd.webp"
 				],
 				"sizes": [
 					{ "size": 40, "quantity": 5 },
@@ -123,6 +161,24 @@
 					{ "size": 42, "quantity": 10 }
 				],
 				"sku": "NB-327-SALT",
+				"price": 2800000
+			},
+			{
+				"color": "Grey/White",
+				"hexCode": "#808080",
+				"images": [
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770016829/4_bue7b5.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770016829/2_svhufj.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770016828/1_goocm4.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770016829/3_pazb33.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770016829/5_j9qqmf.webp"
+				],
+				"sizes": [
+					{ "size": 40, "quantity": 5 },
+					{ "size": 41, "quantity": 10 },
+					{ "size": 42, "quantity": 10 }
+				],
+				"sku": "NB-327-GRY-WHT",
 				"price": 2800000
 			}
 		]
@@ -143,7 +199,11 @@
 				"color": "Black/Off White",
 				"hexCode": "#FFFFFF",
 				"images": [
-					"https://images.vans.com/is/image/Vans/VN000EYEBWW-HERO?$583x583$"
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770017017/1_hp7ylp.png",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770017019/2_k1pyly.png",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770017020/3_xp10mu.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770017021/4_kzqwce.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770017022/5_sfhhmm.webp"
 				],
 				"sizes": [
 					{ "size": 36, "quantity": 10 },
@@ -152,7 +212,26 @@
 					{ "size": 39, "quantity": 15 },
 					{ "size": 40, "quantity": 15 }
 				],
-				"sku": "VANS-SLIP-CHK",
+				"sku": "VANS-SLIP-CHK-OW",
+				"price": 1450000
+			},
+			{
+				"color": "Black",
+				"hexCode": "#000000",
+				"images": [
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770017064/1_uhru4p.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770017065/2_mftkc0.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770017065/3_yzauxy.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770017069/4_nctnbo.webp"
+				],
+				"sizes": [
+					{ "size": 36, "quantity": 10 },
+					{ "size": 37, "quantity": 10 },
+					{ "size": 38, "quantity": 15 },
+					{ "size": 39, "quantity": 15 },
+					{ "size": 40, "quantity": 15 }
+				],
+				"sku": "VANS-SLIP-CHK-BLK",
 				"price": 1450000
 			}
 		]
@@ -173,7 +252,10 @@
 				"color": "Panda (Black/White)",
 				"hexCode": "#000000",
 				"images": [
-					"https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/b1bcbca4-e853-4df7-b329-5be3c61ee057/dunk-low-retro-mens-shoes-njHwD3.png"
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770017253/1_ayblkx.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770017261/2_flstv4.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770017295/4_jroz7m.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770017262/3_semeq5.jpg"
 				],
 				"sizes": [
 					{ "size": 39, "quantity": 20 },
@@ -202,7 +284,11 @@
 				"color": "Core Black/Pink",
 				"hexCode": "#000000",
 				"images": [
-					"https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/205b38d31980456182c6af51010375a0_9366/Giay_Predator_Accuracy.3_San_co_tu_nhien_DJen_GW4593_22_model.jpg"
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770017516/5_qyqsyw.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770017494/1_hxgtkj.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770017515/4_eapi2w.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770017499/2_gge9oi.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770017510/3_qo1c1n.webp"
 				],
 				"sizes": [
 					{ "size": 39, "quantity": 5 },
@@ -231,7 +317,11 @@
 				"color": "Parchment (Kem)",
 				"hexCode": "#FDF5E6",
 				"images": [
-					"https://www.converse.com/dw/image/v2/BJJF_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw8a6669c5/images/a_08/162062C_A_08X1.jpg?sw=964"
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770017603/3_ki5z4j.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770017604/4_gnhil0.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770017595/1_votekn.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770017601/2_twlwn2.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770017611/5_nvhkuf.webp"
 				],
 				"sizes": [
 					{ "size": 38, "quantity": 5 },
@@ -260,7 +350,11 @@
 				"color": "Hyper Pink",
 				"hexCode": "#FF00FF",
 				"images": [
-					"https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/a147e851-4043-4c99-a681-797371569426/phantom-gx-academy-mg-multi-ground-soccer-cleats-P6l41V.png"
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770017696/1_sjzy56.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770017700/5_syrrsb.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770017696/2_pskuil.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770017697/3_fvwbhr.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770017700/4_ynrrfa.jpg"
 				],
 				"sizes": [
 					{ "size": 39, "quantity": 5 },
@@ -289,7 +383,11 @@
 				"color": "Core Black",
 				"hexCode": "#000000",
 				"images": [
-					"https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/01f40d6259024c088928ae8f00155097_9366/Giay_Galaxy_6_Djen_GW3848_01_standard.jpg"
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770017842/2_njhmqo.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770017801/1_hurhny.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770017857/5_tnlqql.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770017843/3_trehnm.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770017856/4_cqobfd.webp"
 				],
 				"sizes": [
 					{ "size": 39, "quantity": 10 },
@@ -318,7 +416,11 @@
 				"color": "Cloud White/Core Black",
 				"hexCode": "#FFFFFF",
 				"images": [
-					"https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/b513ef67e85242a38692a721d0339665_9366/Giay_Samba_OG_trang_B75806_01_standard.jpg"
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770018001/2_otlrw5.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770018004/3_wgr4mc.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770018000/1_ssbcgr.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770018008/5_sgmhxn.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770018005/4_j7alsy.webp"
 				],
 				"sizes": [
 					{ "size": 39, "quantity": 10 },
@@ -333,7 +435,10 @@
 				"color": "Core Black/White",
 				"hexCode": "#000000",
 				"images": [
-					"https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/3bbecbdf584e40398446a8bf0117cf62_9366/Giay_Samba_OG_Djen_B75807_01_standard.jpg"
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770018013/1_y8ezt5.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770018015/2_l5mzfe.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770018016/3_wvjzek.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770018021/5_vz2sm4.avif"
 				],
 				"sizes": [
 					{ "size": 40, "quantity": 10 },
@@ -361,7 +466,11 @@
 				"color": "Trinity (Black/Red)",
 				"hexCode": "#000000",
 				"images": [
-					"https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/e6e6e25d-4950-4560-a292-622c71027113/lebron-xx-basketball-shoes-CT1234.png"
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770018256/3_jkxkqx.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770018251/1_c9dv74.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770018255/2_yqwlba.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770018258/4_f2zxuj.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770018317/5_lmjash.webp"
 				],
 				"sizes": [
 					{ "size": 41, "quantity": 5 },
@@ -390,7 +499,11 @@
 				"color": "White/Silver Metallic",
 				"hexCode": "#C0C0C0",
 				"images": [
-					"https://nb.scene7.com/is/image/NB/mr530sg_nb_02_i?$pdpflexf2$"
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770018394/1_mmtwan.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770018426/4_jjskzj.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770018416/2_esyusx.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770018429/5_a0j7da.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770018424/3_psjvhl.webp"
 				],
 				"sizes": [
 					{ "size": 38, "quantity": 10 },
@@ -419,7 +532,11 @@
 				"color": "Blue Glimmer",
 				"hexCode": "#0000FF",
 				"images": [
-					"https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/107165/01/sv01/fnd/VNM/fmt/png/Gi%C3%A0y-B%C3%B3ng-%C4%90%C3%A1-Nam-Future-Ultimate-FG/AG"
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770018659/1_fchru2.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770018661/2_nwf5bf.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770018669/5_juvm1u.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770018668/4_xsmu4g.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770018663/3_w7d078.webp"
 				],
 				"sizes": [
 					{ "size": 39, "quantity": 5 },
@@ -445,10 +562,33 @@
 		"isPublished": true,
 		"variants": [
 			{
+				"color": "White",
+				"hexCode": "#FFFFFF",
+				"images": [
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770018786/1_axqvid.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770018795/5_we0pch.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770018791/3_kazk8m.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770018788/2_h6e416.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770018792/4_oyanpg.webp"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 10 },
+					{ "size": 40, "quantity": 15 },
+					{ "size": 41, "quantity": 15 },
+					{ "size": 42, "quantity": 10 }
+				],
+				"sku": "VANS-SK8-WHT",
+				"price": 2100000
+			},
+			{
 				"color": "Black/White",
 				"hexCode": "#000000",
 				"images": [
-					"https://images.vans.com/is/image/Vans/VN000D5IB8C-HERO?$583x583$"
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770018919/1_ozhkgo.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770018926/2_k8uqfx.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770018929/3_bob8mw.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770018932/4_oka2la.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770018935/5_ryjui1.webp"
 				],
 				"sizes": [
 					{ "size": 39, "quantity": 10 },
@@ -477,7 +617,11 @@
 				"color": "White",
 				"hexCode": "#FFFFFF",
 				"images": [
-					"https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/5c305382-9a73-45a4-9988-5c4e7235076f/air-max-97-mens-shoes-LJmK45.png"
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770019037/1_mpbtku.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770019040/3_htkjlu.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770019037/2_azydkl.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770019127/5_aku8xs.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770019124/4_imwvi4.webp"
 				],
 				"sizes": [
 					{ "size": 39, "quantity": 5 },
@@ -486,6 +630,25 @@
 					{ "size": 42, "quantity": 5 }
 				],
 				"sku": "NIKE-AM97-WHT",
+				"price": 4600000
+			},
+			{
+				"color": "Silver Bullet",
+				"hexCode": "#C0C0C0",
+				"images": [
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770019334/2_qkf80u.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770019329/1_efbwkg.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770019337/3_cpytph.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770019341/4_akakkv.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770019345/5_buipar.webp"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 5 },
+					{ "size": 40, "quantity": 10 },
+					{ "size": 41, "quantity": 10 },
+					{ "size": 42, "quantity": 5 }
+				],
+				"sku": "NIKE-AM97-SILVER",
 				"price": 4600000
 			}
 		]
@@ -506,7 +669,11 @@
 				"color": "Black",
 				"hexCode": "#000000",
 				"images": [
-					"https://www.converse.com/dw/image/v2/BJJF_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw15db7419/images/a_08/171545C_A_08X1.jpg?sw=964"
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770019063/1_ht3u9f.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770019085/2_gcdvwz.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770019088/3_x7khip.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770019089/4_razmqs.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770019093/5_dgfzdk.jpg"
 				],
 				"sizes": [
 					{ "size": 37, "quantity": 5 },
@@ -535,7 +702,11 @@
 				"color": "Pulse Mint",
 				"hexCode": "#00FF7F",
 				"images": [
-					"https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/20b66c4068564e97a31aaf5200f3f2a8_9366/Giay_Adizero_Adios_Pro_3_Xanh_luc_GV7067_01_standard.jpg"
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770019482/1_pcg7ni.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770019486/3_nbikp9.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770019643/5_j1vmvv.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770019484/2_hqsuly.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770019640/4_t3bza0.jpg"
 				],
 				"sizes": [
 					{ "size": 40, "quantity": 3 },
@@ -563,7 +734,11 @@
 				"color": "Rain Cloud",
 				"hexCode": "#808080",
 				"images": [
-					"https://nb.scene7.com/is/image/NB/u9060gry_nb_02_i?$pdpflexf2$"
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770019646/1_q212nw.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770019656/2_rlrgiv.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770019660/3_x91vwk.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770019667/5_o1ogbz.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770019662/4_wzddxs.webp"
 				],
 				"sizes": [
 					{ "size": 39, "quantity": 5 },
@@ -592,7 +767,11 @@
 				"color": "Sunset Glow",
 				"hexCode": "#FF4500",
 				"images": [
-					"https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/195337/01/sv01/fnd/VNM/fmt/png/Gi%C3%A0y-Ch%E1%BA%A1y-B%E1%BB%99-Nam-Velocity-NITRO-2"
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770019826/1_vn6q2u.png",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770020013/2_k0wfi7.png",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770020016/3_yknvjf.png",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770020093/4_ojxfia.png",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770020095/5_scd4ba.png"
 				],
 				"sizes": [
 					{ "size": 40, "quantity": 8 },
@@ -617,10 +796,14 @@
 		"isPublished": true,
 		"variants": [
 			{
-				"color": "White/Black",
+				"color": "White",
 				"hexCode": "#FFFFFF",
 				"images": [
-					"https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/384463/01/sv01/fnd/VNM/fmt/png/Gi%C3%A0y-Sneakers-N%E1%BB%AF-Mayze-Classic"
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770020182/4_i1znne.avif",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770020175/1_uhh2k3.avif",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770020318/5_wacgyc.avif",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770020177/2_bfyztf.avif",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770020179/3_ca09sx.avif"
 				],
 				"sizes": [
 					{ "size": 36, "quantity": 10 },
@@ -629,6 +812,25 @@
 					{ "size": 39, "quantity": 5 }
 				],
 				"sku": "PUMA-MAYZE-WHT",
+				"price": 2600000
+			},
+			{
+				"color": "Black",
+				"hexCode": "#000000",
+				"images": [
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770020321/1_bgnoap.avif",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770020323/2_civs3x.avif",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770020464/5_qcdqi4.avif",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770020326/3_trxknd.avif",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770020462/4_qpnzv8.avif"
+				],
+				"sizes": [
+					{ "size": 36, "quantity": 10 },
+					{ "size": 37, "quantity": 15 },
+					{ "size": 38, "quantity": 15 },
+					{ "size": 39, "quantity": 5 }
+				],
+				"sku": "PUMA-MAYZE-BLK",
 				"price": 2600000
 			}
 		]
@@ -646,10 +848,14 @@
 		"isPublished": true,
 		"variants": [
 			{
-				"color": "Black/White",
-				"hexCode": "#000000",
+				"color": "White",
+				"hexCode": "#FFFFFF",
 				"images": [
-					"https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/awjgulaomsghj57zkv2o/air-max-270-mens-shoes-KkLcGR.png"
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770020906/1_jqfbsk.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770020977/4_atrdle.png",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770020961/2_eoncjo.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770020974/3_zea3sa.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770020980/5_lgdhki.png"
 				],
 				"sizes": [
 					{ "size": 40, "quantity": 10 },
@@ -657,7 +863,26 @@
 					{ "size": 42, "quantity": 15 },
 					{ "size": 43, "quantity": 5 }
 				],
-				"sku": "NIKE-AM270-BLK",
+				"sku": "NIKE-AM270-WHT",
+				"price": 3800000
+			},
+			{
+				"color": "Triple Black",
+				"hexCode": "#000000",
+				"images": [
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770020990/1_f7f3hd.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770021030/2_iwl5pw.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770021034/3_letcio.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770021036/4_hp1wvb.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770021039/5_uhkqnz.webp"
+				],
+				"sizes": [
+					{ "size": 40, "quantity": 10 },
+					{ "size": 41, "quantity": 20 },
+					{ "size": 42, "quantity": 15 },
+					{ "size": 43, "quantity": 5 }
+				],
+				"sku": "NIKE-AM270-TBLK",
 				"price": 3800000
 			}
 		]
@@ -678,7 +903,11 @@
 				"color": "Cloud White/Royal Blue",
 				"hexCode": "#0000FF",
 				"images": [
-					"https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/7c9bdfc62ebf477cb461ac64010027a7_9366/Giay_Forum_Low_trang_FY7757_01_standard.jpg"
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770021413/1_jsdqw0.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770021422/2_o6hlqd.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770021425/3_s2m8ut.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770021428/4_bzeb4o.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770021431/5_ou8sap.jpg"
 				],
 				"sizes": [
 					{ "size": 39, "quantity": 5 },
@@ -687,6 +916,44 @@
 					{ "size": 42, "quantity": 10 }
 				],
 				"sku": "ADI-FORUM-BLU",
+				"price": 2500000
+			},
+			{
+				"color": "Core White",
+				"hexCode": "#FFFFFF",
+				"images": [
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770021608/1_hoccm1.avif",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770021616/4_ynlupg.avif",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770021619/5_ro9ynu.avif",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770021611/2_pqlxza.avif",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770021614/3_tyrkir.avif"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 5 },
+					{ "size": 40, "quantity": 10 },
+					{ "size": 41, "quantity": 15 },
+					{ "size": 42, "quantity": 10 }
+				],
+				"sku": "ADI-FORUM-WHT",
+				"price": 2500000
+			},
+			{
+				"color": "Cream White/Green",
+				"hexCode": "#049166",
+				"images": [
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770021434/1_mevfrv.avif",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770021591/4_ybwfyw.avif",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770021594/5_xojetb.avif",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770021468/2_akw7di.avif",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770021587/3_wzbjla.avif"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 5 },
+					{ "size": 40, "quantity": 10 },
+					{ "size": 41, "quantity": 15 },
+					{ "size": 42, "quantity": 10 }
+				],
+				"sku": "ADI-FORUM-CRE-GRN",
 				"price": 2500000
 			}
 		]
@@ -707,7 +974,11 @@
 				"color": "Grey/Silver",
 				"hexCode": "#808080",
 				"images": [
-					"https://nb.scene7.com/is/image/NB/m2002rcc_nb_02_i?$pdpflexf2$"
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770021915/1_phrpg8.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770021918/2_ghabu6.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770022022/4_wjxvro.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770022019/3_xlxoov.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770022029/5_tlkc2b.jpg"
 				],
 				"sizes": [
 					{ "size": 40, "quantity": 8 },
@@ -716,6 +987,25 @@
 					{ "size": 43, "quantity": 6 }
 				],
 				"sku": "NB-2002R-GREY",
+				"price": 3600000
+			},
+			{
+				"color": "Red/Silver",
+				"hexCode": "#FF0000",
+				"images": [
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770021900/1_o7ywf4.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770021902/2_pplmom.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770021905/3_xa1bn3.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770021908/4_n0tz8v.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770021911/5_x0hhio.jpg"
+				],
+				"sizes": [
+					{ "size": 40, "quantity": 8 },
+					{ "size": 41, "quantity": 12 },
+					{ "size": 42, "quantity": 12 },
+					{ "size": 43, "quantity": 6 }
+				],
+				"sku": "NB-2002R-RED",
 				"price": 3600000
 			}
 		]
@@ -736,7 +1026,11 @@
 				"color": "Red",
 				"hexCode": "#FF0000",
 				"images": [
-					"https://images.vans.com/is/image/Vans/VN000EE3RED-HERO?$583x583$"
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770022382/1_ex2cs7.png",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770022383/2_jnzvnj.png",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770022386/3_ufqz4j.png",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770022389/4_x0frwh.png",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770022444/5_ufudpe.png"
 				],
 				"sizes": [
 					{ "size": 36, "quantity": 5 },
@@ -766,7 +1060,11 @@
 				"color": "Psychic Purple",
 				"hexCode": "#800080",
 				"images": [
-					"https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/e3860550-9d10-482f-90e8-070104975560/kd15-basketball-shoes-M30403.png"
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770022602/1_tds1na.avif",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770022607/3_jd95t6.avif",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770022609/4_alzwhv.avif",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770022704/5_qnpkff.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770022603/2_r2qc3c.avif"
 				],
 				"sizes": [
 					{ "size": 41, "quantity": 5 },
@@ -793,9 +1091,13 @@
 		"variants": [
 			{
 				"color": "White/Lucid Lemon",
-				"hexCode": "#FFFFE0",
+				"hexCode": "#C6FE83",
 				"images": [
-					"https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/257321689228471b876daf6101031359_9366/Giay_X_Crazyfast.3_San_co_nhan_tao_trang_ID9337_22_model.jpg"
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770023133/1_n7v1my.avif",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770023141/4_fqyuyd.avif",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770023144/5_vs0mxf.avif",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770023134/2_lbwb5y.avif",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770023137/3_cmyt9l.avif"
 				],
 				"sizes": [
 					{ "size": 39, "quantity": 8 },
@@ -803,7 +1105,26 @@
 					{ "size": 41, "quantity": 15 },
 					{ "size": 42, "quantity": 10 }
 				],
-				"sku": "ADI-XCRAZY-WHT",
+				"sku": "ADI-XCRAZY-WHL",
+				"price": 2000000
+			},
+			{
+				"color": "Triple White",
+				"hexCode": "#FFFFFF",
+				"images": [
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770023149/1_of2grz.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770023158/4_ozvxc4.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770023161/5_livfhf.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770023155/3_hrvgwc.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770023152/2_obf1u0.webp"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 8 },
+					{ "size": 40, "quantity": 15 },
+					{ "size": 41, "quantity": 15 },
+					{ "size": 42, "quantity": 10 }
+				],
+				"sku": "ADI-XCRAZY-TWH",
 				"price": 2000000
 			}
 		]
@@ -821,10 +1142,32 @@
 		"isPublished": true,
 		"variants": [
 			{
+				"color": "White",
+				"hexCode": "#FFFFFF",
+				"images": [
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770024392/1_uppdtk.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770024393/2_denjtr.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770024398/3_xjfani.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770024400/4_vz27hi.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770024403/5_njtpwy.jpg"
+				],
+				"sizes": [
+					{ "size": 36, "quantity": 10 },
+					{ "size": 37, "quantity": 15 },
+					{ "size": 38, "quantity": 10 }
+				],
+				"sku": "CON-MOVE-WHT",
+				"price": 2100000
+			},
+			{
 				"color": "Black/White",
 				"hexCode": "#000000",
 				"images": [
-					"https://www.converse.com/dw/image/v2/BJJF_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw1872df0d/images/a_08/568497C_A_08X1.jpg?sw=964"
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770024740/5_i5oize.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770024436/1_l8mwv5.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770024729/2_f9xeld.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770024734/3_dfih1r.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770024737/4_lgv3w0.jpg"
 				],
 				"sizes": [
 					{ "size": 36, "quantity": 10 },
@@ -852,7 +1195,11 @@
 				"color": "Vintage Indigo",
 				"hexCode": "#4B0082",
 				"images": [
-					"https://nb.scene7.com/is/image/NB/w1080h12_nb_02_i?$pdpflexf2$"
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770026109/1_wyibum.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770026110/2_qhtsyo.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770026117/4_lrgx9s.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770026114/3_g4v1ak.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770026120/5_hevbwc.webp"
 				],
 				"sizes": [
 					{ "size": 40, "quantity": 5 },
@@ -878,9 +1225,12 @@
 		"variants": [
 			{
 				"color": "White/Blue",
-				"hexCode": "#FFFFFF",
+				"hexCode": "#60BCE0",
 				"images": [
-					"https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/a1e74567-54b1-46c5-a6e5-407513b19280/tiempo-legend-9-academy-mg-multi-ground-soccer-cleats-K1T7C1.png"
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770026663/3_eqvpvb.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770026658/1_che5wi.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770026660/2_rc52ic.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770026667/4_ougaxm.webp"
 				],
 				"sizes": [
 					{ "size": 39, "quantity": 10 },
@@ -889,6 +1239,25 @@
 					{ "size": 42, "quantity": 10 }
 				],
 				"sku": "NIKE-TIEMPO-WHT",
+				"price": 1950000
+			},
+			{
+				"color": "White/Red",
+				"hexCode": "#E43434",
+				"images": [
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770026671/1_hdfbcu.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770026675/2_exeo0t.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770026678/3_ozuz8o.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770026684/5_righ1q.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770026681/4_s5edb4.jpg"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 10 },
+					{ "size": 40, "quantity": 20 },
+					{ "size": 41, "quantity": 20 },
+					{ "size": 42, "quantity": 10 }
+				],
+				"sku": "NIKE-TIEMPO-RED",
 				"price": 1950000
 			}
 		]
@@ -906,11 +1275,14 @@
 		"isPublished": true,
 		"variants": [
 			{
-				"color": "Trắng (White)",
+				"color": "White",
 				"hexCode": "#FFFFFF",
 				"images": [
-					"https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/b7d9211c-26e7-431a-ac24-b0540fb3c00f/air-force-1-07-shoes-WrLlWX.png",
-					"https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/a0a300da-2e3c-4cf2-9653-0604e76a5b6e/air-force-1-07-shoes-WrLlWX.png"
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770027017/5_ekn12k.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770027020/1_ntrgnw.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770027007/2_qszeaq.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770027013/4_d6hi13.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770027010/3_xpwon6.webp"
 				],
 				"sizes": [
 					{ "size": 39, "quantity": 10 },
@@ -918,21 +1290,25 @@
 					{ "size": 41, "quantity": 15 },
 					{ "size": 42, "quantity": 5 }
 				],
-				"sku": "NIKE-AF1-WHT-001",
+				"sku": "NIKE-AF1-WHT",
 				"price": 2900000
 			},
 			{
-				"color": "Đen (Black)",
+				"color": "Black",
 				"hexCode": "#000000",
 				"images": [
-					"https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/fc4622c4-2769-4665-aa6e-a2c06d316642/air-force-1-07-shoes-WrLlWX.png"
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770027024/1_rr3ygp.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770027030/3_ubdrbi.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770027118/4_mdguwb.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770027123/5_qhf7ju.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770027027/2_xnjuqq.webp"
 				],
 				"sizes": [
 					{ "size": 40, "quantity": 8 },
 					{ "size": 41, "quantity": 12 },
 					{ "size": 42, "quantity": 20 }
 				],
-				"sku": "NIKE-AF1-BLK-002",
+				"sku": "NIKE-AF1-BLK",
 				"price": 2900000
 			}
 		]
@@ -953,8 +1329,11 @@
 				"color": "Cloud White",
 				"hexCode": "#F0F0F0",
 				"images": [
-					"https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/0fbed4646c1d46e0aae0afbc00f91e9e_9366/Giay_Ultraboost_Light_trang_HQ6351_01_standard.jpg",
-					"https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/a95f08836526437198a2afbc00f92c1c_9366/Giay_Ultraboost_Light_trang_HQ6351_02_standard_hover.jpg"
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770027410/1_ukbwt2.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770027414/2_cuvbo8.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770027417/3_vxvbrd.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770027420/4_zlf3wc.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770027424/5_f9fqdi.jpg"
 				],
 				"sizes": [
 					{ "size": 40, "quantity": 10 },
@@ -963,6 +1342,25 @@
 					{ "size": 43, "quantity": 5 }
 				],
 				"sku": "ADIDAS-UB-LGT-WHT",
+				"price": 5200000
+			},
+			{
+				"color": "Solar Red",
+				"hexCode": "#FF0000",
+				"images": [
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770027550/1_ikra5u.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770027560/4_z2nnto.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770027557/3_hjkfmu.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770027563/5_brhstd.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770027552/2_kkaoo3.jpg"
+				],
+				"sizes": [
+					{ "size": 40, "quantity": 10 },
+					{ "size": 41, "quantity": 10 },
+					{ "size": 42, "quantity": 10 },
+					{ "size": 43, "quantity": 5 }
+				],
+				"sku": "ADIDAS-UB-LGT-RED",
 				"price": 5200000
 			}
 		]
@@ -983,8 +1381,11 @@
 				"color": "Black/White",
 				"hexCode": "#333333",
 				"images": [
-					"https://images.vans.com/is/image/Vans/VN000D3HY28-HERO?$583x583$",
-					"https://images.vans.com/is/image/Vans/VN000D3HY28-ALT1?$583x583$"
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770027663/1_gomfjj.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770027667/2_w8j0i5.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770027709/3_fdvc6q.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770027719/4_hmj5ss.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770027722/5_yprrei.webp"
 				],
 				"sizes": [
 					{ "size": 36, "quantity": 5 },
@@ -995,7 +1396,29 @@
 					{ "size": 41, "quantity": 20 },
 					{ "size": 42, "quantity": 10 }
 				],
-				"sku": "VANS-OS-BW-001",
+				"sku": "VANS-OS-BWHT",
+				"price": 1900000
+			},
+			{
+				"color": "White",
+				"hexCode": "#FFFFFF",
+				"images": [
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770027771/1_zbc3sc.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770027774/2_atxzzq.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770027777/3_ck1td6.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770027781/4_dnvjk4.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770027785/5_vccsx6.webp"
+				],
+				"sizes": [
+					{ "size": 36, "quantity": 5 },
+					{ "size": 37, "quantity": 5 },
+					{ "size": 38, "quantity": 10 },
+					{ "size": 39, "quantity": 15 },
+					{ "size": 40, "quantity": 20 },
+					{ "size": 41, "quantity": 20 },
+					{ "size": 42, "quantity": 10 }
+				],
+				"sku": "VANS-OS-WHT",
 				"price": 1900000
 			}
 		]
@@ -1016,8 +1439,11 @@
 				"color": "Classic Black",
 				"hexCode": "#1A1A1A",
 				"images": [
-					"https://www.converse.com/dw/image/v2/BJJF_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw60471960/images/a_08/M9160_A_08X1.jpg?sw=964",
-					"https://www.converse.com/dw/image/v2/BJJF_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw10626300/images/c_08/M9160_C_08X1.jpg?sw=964"
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770028063/2_ryqlxv.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770028060/1_cfqlkb.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770028067/3_upseez.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770028071/4_na3fjr.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770028074/5_u9entr.webp"
 				],
 				"sizes": [
 					{ "size": 38, "quantity": 10 },
@@ -1033,7 +1459,10 @@
 				"color": "Red",
 				"hexCode": "#FF0000",
 				"images": [
-					"https://www.converse.com/dw/image/v2/BJJF_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dwc622502c/images/a_08/M9621_A_08X1.jpg?sw=964"
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770028300/6_zpbgkn.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770028303/7_tit02m.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770028307/8_wmgu6g.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770028296/9_uiiyjt.webp"
 				],
 				"sizes": [
 					{ "size": 38, "quantity": 5 },
@@ -1058,10 +1487,14 @@
 		"isPublished": true,
 		"variants": [
 			{
-				"color": "Yellow Strike",
+				"color": "Lucent Pack",
 				"hexCode": "#FFEE00",
 				"images": [
-					"https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/e9d41cd4-a2c5-438d-984f-e60d906f5271/zoom-mercurial-superfly-9-elite-fg-firm-ground-soccer-cleats-sb8gjk.png"
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770080648/1_clwkty.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770080654/3_b7fxy8.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770080649/2_ukvik6.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770080656/4_zkz8wu.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770080670/5_e70geq.jpg"
 				],
 				"sizes": [
 					{ "size": 39, "quantity": 2 },
@@ -1090,7 +1523,11 @@
 				"color": "Blue Atoll",
 				"hexCode": "#00FFFF",
 				"images": [
-					"https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/378284/01/sv01/fnd/VNM/fmt/png/Gi%C3%A0y-B%C3%B3ng-R%E1%BB%95-Nam-MB.02-Rookie-of-the-Year"
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770080706/1_tvynl9.avif",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770080798/5_a5dm64.avif",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770080711/2_vff34f.avif",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770080714/3_te0jzp.avif",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770080793/4_jqwtbo.avif"
 				],
 				"sizes": [
 					{ "size": 41, "quantity": 8 },
@@ -1119,7 +1556,11 @@
 				"color": "Grey",
 				"hexCode": "#808080",
 				"images": [
-					"https://nb.scene7.com/is/image/NB/ml574evg_nb_02_i?$pdpflexf2$"
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770081636/1_zuao8w.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770081638/2_lbmfsp.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770081650/5_jezgga.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770081647/4_iywqc6.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770081642/3_kbtzp2.jpg"
 				],
 				"sizes": [
 					{ "size": 39, "quantity": 10 },
@@ -1134,7 +1575,11 @@
 				"color": "Navy",
 				"hexCode": "#000080",
 				"images": [
-					"https://nb.scene7.com/is/image/NB/ml574evn_nb_02_i?$pdpflexf2$"
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770081186/1_qhdpit.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770081242/5_jehwsf.webp",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770081230/2_vrrltm.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770081238/4_tsuhft.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1770081235/3_hkqv01.jpg"
 				],
 				"sizes": [
 					{ "size": 40, "quantity": 5 },

@@ -14,8 +14,8 @@ cloudinary.config({
 const storage = new CloudinaryStorage({
 	cloudinary: cloudinary,
 	params: {
-		folder: "sneakerhub", // Tên folder trên Cloudinary
-		allowed_formats: ["jpg", "png", "jpeg"], // Định dạng cho phép
+		folder: process.env.CLOUDINARY_FOLDER,
+		allowed_formats: ["jpg", "png", "jpeg"],
 	},
 });
 
