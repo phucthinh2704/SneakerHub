@@ -5,11 +5,14 @@ import { apiAddToCart } from "../api/cart";
 import { Loader2, Star, Truck, ShieldCheck } from "lucide-react";
 import toast from "react-hot-toast";
 import { useSelector } from "react-redux";
+import { apiGetProductReviews, apiCreateReview } from "../api/review";
 
 const ProductDetail = () => {
 	const { slug } = useParams();
 	const navigate = useNavigate();
-	const { isLoggedIn } = useSelector((state) => state.auth);
+	const { isLoggedIn, user: currentUser } = useSelector(
+		(state) => state.auth,
+	);
 
 	const [product, setProduct] = useState(null);
 	const [loading, setLoading] = useState(true);
@@ -19,6 +22,11 @@ const ProductDetail = () => {
 	const [selectedSize, setSelectedSize] = useState(null); // Size object đang chọn
 	const [quantity, setQuantity] = useState(1);
 	const [activeImage, setActiveImage] = useState("");
+
+	const [reviews, setReviews] = useState([]);
+	const [rating, setRating] = useState(5); // Mặc định 5 sao
+	const [comment, setComment] = useState("");
+	const [isSubmitting, setIsSubmitting] = useState(false);
 
 	useEffect(() => {
 		const fetchProduct = async () => {
@@ -42,6 +50,65 @@ const ProductDetail = () => {
 		};
 		fetchProduct();
 	}, [slug]);
+
+	// --- THÊM LOGIC REVIEW ---
+
+	// Tự động gọi API lấy review khi đã có product._id
+	useEffect(() => {
+		if (product?._id) {
+			const fetchReviews = async () => {
+				try {
+					const res = await apiGetProductReviews(product._id);
+					if (res.success) {
+						setReviews(res.result);
+					}
+				} catch (error) {
+					console.error("Lỗi lấy đánh giá", error);
+				}
+			};
+			fetchReviews();
+		}
+	}, [product?._id]);
+
+	// Hàm xử lý gửi đánh giá
+	const handleSubmitReview = async (e) => {
+		e.preventDefault();
+
+		if (!isLoggedIn) {
+			toast.error("Vui lòng đăng nhập để đánh giá");
+			return navigate("/login");
+		}
+
+		// Ràng buộc độ dài tối thiểu (Ví dụ: 10 ký tự)
+		if (comment.trim().length < 10) {
+			return toast.error(
+				"Vui lòng nhập đánh giá dài ít nhất 10 ký tự để chia sẻ chi tiết hơn nhé.",
+			);
+		}
+
+		try {
+			setIsSubmitting(true);
+			const res = await apiCreateReview(product._id, { rating, comment });
+			if (res.success) {
+				toast.success("Cảm ơn bạn đã đánh giá!");
+				setComment("");
+				setRating(5);
+
+				// Lấy lại danh sách review mới
+				const revRes = await apiGetProductReviews(product._id);
+				if (revRes.success) {
+					setReviews(revRes.result);
+				}
+				// Tùy chọn: Bạn có thể fetch lại thông tin product ở đây để cập nhật số sao trung bình hiển thị ở trên cùng
+				// fetchProduct();
+			} else toast.error(res.message || "Lỗi gửi đánh giá");
+		} catch (error) {
+			// Sẽ hứng các lỗi từ Backend như "Chưa mua hàng" hoặc "Đã đánh giá rồi"
+			toast.error(error.response?.data?.message || "Lỗi gửi đánh giá");
+		} finally {
+			setIsSubmitting(false);
+		}
+	};
 
 	const handleColorChange = (variant) => {
 		setSelectedVariant(variant);
@@ -75,6 +142,11 @@ const ProductDetail = () => {
 		}
 	};
 
+	const hasReviewed = reviews.some(
+		(rev) =>
+			rev.user?._id === currentUser?._id || rev.user === currentUser?._id,
+	);
+
 	if (loading)
 		return (
 			<div className="min-h-screen flex justify-center items-center">
@@ -93,17 +165,17 @@ const ProductDetail = () => {
 						<img
 							src={activeImage}
 							alt={product.name}
-							className="w-full h-full object-cover object-center"
+							className="w-full h-145 object-cover object-center"
 						/>
 					</div>
 					{/* List ảnh nhỏ của variant hiện tại */}
-					<div className="flex space-x-2 overflow-x-auto">
+					<div className="flex space-x-2 overflow-x-auto justify-between">
 						{selectedVariant?.images.map((img, idx) => (
 							<img
 								key={idx}
 								src={img}
 								onClick={() => setActiveImage(img)}
-								className={`w-20 h-20 object-cover rounded cursor-pointer border-2 ${activeImage === img ? "border-orange-600" : "border-transparent"}`}
+								className={`w-28 h-28 object-cover rounded cursor-pointer border-2 ${activeImage === img ? "border-orange-600" : "border-transparent"}`}
 								alt="thumbnail"
 							/>
 						))}
@@ -236,6 +308,134 @@ const ProductDetail = () => {
 							<ShieldCheck className="w-5 h-5 mr-3 text-orange-600" />
 							<span>Bảo hành chính hãng 12 tháng</span>
 						</div>
+					</div>
+				</div>
+			</div>
+			<div className="mt-16 border-t pt-10">
+				<h2 className="text-2xl font-bold text-gray-900 mb-8">
+					Đánh giá sản phẩm
+				</h2>
+
+				<div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+					{/* CỘT 1: FORM VIẾT ĐÁNH GIÁ */}
+					<div>
+						<h3 className="text-lg font-medium text-gray-900 mb-4">
+							Viết đánh giá của bạn
+						</h3>
+						{!isLoggedIn ? (
+							<div className="bg-gray-50 p-6 rounded-md text-center border border-dashed border-gray-300">
+								<p className="text-gray-600 mb-4">
+									Bạn cần đăng nhập để viết đánh giá
+								</p>
+								<button
+									onClick={() => navigate("/login")}
+									className="bg-gray-900 text-white px-6 py-2 rounded-md hover:bg-gray-800">
+									Đăng nhập ngay
+								</button>
+							</div>
+						) : hasReviewed ? (
+							// NẾU ĐÃ REVIEW RỒI THÌ ẨN FORM VÀ HIỆN THÔNG BÁO
+							<div className="bg-green-50 p-6 rounded-md text-center border border-green-200">
+								<p className="text-green-700 font-medium">
+									Bạn đã đánh giá sản phẩm này rồi. Cảm ơn
+									phản hồi của bạn!
+								</p>
+							</div>
+						) : (
+							<form
+								onSubmit={handleSubmitReview}
+								className="space-y-4">
+								{/* Chọn số sao */}
+								<div>
+									<label className="block text-sm text-gray-700 mb-2">
+										Đánh giá:
+									</label>
+									<div className="flex space-x-1">
+										{[1, 2, 3, 4, 5].map((star) => (
+											<Star
+												key={star}
+												size={24}
+												onClick={() => setRating(star)}
+												className={`cursor-pointer ${star <= rating ? "text-yellow-400 fill-current" : "text-gray-300"}`}
+											/>
+										))}
+									</div>
+								</div>
+
+								{/* Ô nhập nội dung */}
+								<div>
+									<label className="block text-sm text-gray-700 mb-2">
+										Nội dung:
+									</label>
+									<textarea
+										rows="4"
+										value={comment}
+										onChange={(e) =>
+											setComment(e.target.value)
+										}
+										placeholder="Chia sẻ cảm nhận của bạn về sản phẩm..."
+										className="w-full border border-gray-300 rounded-md p-3 focus:ring-orange-500 focus:border-orange-500 outline-none"></textarea>
+								</div>
+
+								<button
+									type="submit"
+									disabled={isSubmitting}
+									className="bg-orange-600 text-white px-6 py-2 rounded-md hover:bg-orange-700 disabled:opacity-50">
+									{isSubmitting
+										? "Đang gửi..."
+										: "Gửi đánh giá"}
+								</button>
+							</form>
+						)}
+					</div>
+
+					{/* CỘT 2: DANH SÁCH REVIEW ĐÃ CÓ */}
+					<div>
+						<h3 className="text-lg font-medium text-gray-900 mb-4">
+							Khách hàng nhận xét ({reviews.length})
+						</h3>
+
+						{reviews.length === 0 ? (
+							<p className="text-gray-500 italic">
+								Chưa có đánh giá nào cho sản phẩm này.
+							</p>
+						) : (
+							<div className="space-y-6 max-h-125 overflow-y-auto pr-2">
+								{reviews.map((rev) => (
+									<div
+										key={rev._id}
+										className="border-b pb-4">
+										<div className="flex items-center justify-between mb-2">
+											<span className="font-semibold text-gray-800">
+												{rev.user?.name || "Khách hàng"}
+											</span>
+											<span className="text-xs text-gray-500">
+												{new Date(
+													rev.createdAt,
+												).toLocaleDateString("vi-VN")}
+											</span>
+										</div>
+										{/* Hiển thị sao của user này */}
+										<div className="flex text-yellow-400 mb-2">
+											{[...Array(5)].map((_, i) => (
+												<Star
+													key={i}
+													size={14}
+													fill={
+														i < rev.rating
+															? "currentColor"
+															: "none"
+													}
+												/>
+											))}
+										</div>
+										<p className="text-gray-600 text-sm">
+											{rev.comment}
+										</p>
+									</div>
+								))}
+							</div>
+						)}
 					</div>
 				</div>
 			</div>

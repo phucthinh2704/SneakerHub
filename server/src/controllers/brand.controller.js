@@ -20,6 +20,18 @@ const createBrand = async (req, res) => {
 				.status(400)
 				.json({ success: false, message: "Tên và Logo là bắt buộc" });
 
+		const brandExists = await Brand.findOne({
+			name: { $regex: new RegExp(`^${name}$`, "i") },
+		});
+		if (brandExists) {
+			return res
+				.status(400)
+				.json({
+					success: false,
+					message: "Tên thương hiệu này đã tồn tại!",
+				});
+		}
+
 		const brand = await Brand.create({
 			name,
 			slug: slugify(name),
@@ -27,6 +39,65 @@ const createBrand = async (req, res) => {
 			description,
 		});
 		res.status(201).json({ success: true, result: brand });
+	} catch (error) {
+		res.status(500).json({ success: false, message: error.message });
+	}
+};
+
+const updateBrand = async (req, res) => {
+	try {
+		const { name, logo, description, isActive } = req.body;
+		const brand = await Brand.findById(req.params.id);
+
+		if (!brand)
+			return res
+				.status(404)
+				.json({
+					success: false,
+					message: "Không tìm thấy thương hiệu",
+				});
+
+		// THÊM VALIDATE TRÙNG TÊN KHI UPDATE
+		// Chỉ kiểm tra nếu Admin có sửa tên, và tên mới khác tên cũ
+		if (name && name !== brand.name) {
+			const brandExists = await Brand.findOne({
+				name: { $regex: new RegExp(`^${name}$`, "i") },
+				_id: { $ne: req.params.id }, // Loại trừ chính ID của brand đang sửa
+			});
+			if (brandExists) {
+				return res
+					.status(400)
+					.json({
+						success: false,
+						message:
+							"Tên thương hiệu này đã bị trùng với một thương hiệu khác!",
+					});
+			}
+		}
+
+		brand.name = name || brand.name;
+		if (name) brand.slug = slugify(name);
+		brand.logo = logo !== undefined ? logo : brand.logo;
+		brand.description =
+			description !== undefined ? description : brand.description;
+		brand.isActive = isActive !== undefined ? isActive : brand.isActive;
+
+		const updatedBrand = await brand.save();
+		res.json({ success: true, result: updatedBrand });
+	} catch (error) {
+		res.status(500).json({ success: false, message: error.message });
+	}
+};
+
+const deleteBrand = async (req, res) => {
+	try {
+		const brand = await Brand.findById(req.params.id);
+		if (!brand)
+			return res
+				.status(404)
+				.json({ success: false, message: "Không tìm thấy" });
+		await brand.deleteOne();
+		res.json({ success: true, message: "Đã xóa thương hiệu" });
 	} catch (error) {
 		res.status(500).json({ success: false, message: error.message });
 	}
@@ -70,4 +141,10 @@ const importBrands = async (req, res) => {
 	}
 };
 
-module.exports = { getBrands, createBrand, importBrands };
+module.exports = {
+	getBrands,
+	createBrand,
+	importBrands,
+	updateBrand,
+	deleteBrand,
+};

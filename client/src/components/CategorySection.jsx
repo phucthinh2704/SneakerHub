@@ -43,7 +43,7 @@ const CategorySection = () => {
           {categories.map((cat) => (
             <Link 
               key={cat._id} 
-              to={`/shop?category=${cat._id}`} 
+              to={`/shop?category=${cat.slug}`} 
               className="group relative block overflow-hidden rounded-2xl shadow-sm hover:shadow-xl transition duration-300"
             >
               {/* Ảnh nền danh mục */}

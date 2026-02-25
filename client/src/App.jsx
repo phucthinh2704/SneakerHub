@@ -2,9 +2,14 @@ import { Toaster } from "react-hot-toast";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 // Import Components Layout
-import { PrivateRoute, PublicRoute } from "./components/AuthWrapper";
-import ScrollToTop from "./components/ScrollToTop";
+import {
+	PrivateRoute,
+	PublicRoute,
+	AdminRoute,
+} from "./components/AuthWrapper";
 import MainLayout from "./components/MainLayout";
+import AdminLayout from "./components/admin/AdminLayout";
+import ScrollToTop from "./components/ScrollToTop";
 
 // Import Pages
 import About from "./pages/About";
@@ -13,11 +18,22 @@ import Checkout from "./pages/Checkout";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import NotFound from "./pages/NotFound";
+import OrderDetail from "./pages/OrderDetail";
 import OrderHistory from "./pages/OrderHistory";
 import ProductDetail from "./pages/ProductDetail";
 import Profile from "./pages/Profile";
 import Register from "./pages/Register";
 import Shop from "./pages/Shop";
+import Contact from "./pages/Contact";
+import Blog from "./pages/Blog";
+import Policy from "./pages/Policy";
+import AdminProducts from "./pages/admin/AdminProducts";
+import AdminOrders from "./pages/admin/AdminOrders";
+import Dashboard from "./pages/admin/Dashboard";
+import AdminUsers from "./pages/admin/AdminUsers";
+import AdminProductForm from "./pages/admin/AdminProductForm";
+import AdminCategories from "./pages/admin/AdminCategories";
+import AdminBrands from "./pages/admin/AdminBrands";
 
 function App() {
 	return (
@@ -57,6 +73,18 @@ function App() {
 						element={<About />}
 					/>
 					<Route
+						path="/contact"
+						element={<Contact />}
+					/>
+					<Route
+						path="/blog"
+						element={<Blog />}
+					/>
+					<Route
+						path="/policy"
+						element={<Policy />}
+					/>
+					<Route
 						path="/shop"
 						element={<Shop />}
 					/>
@@ -81,13 +109,64 @@ function App() {
 							element={<OrderHistory />}
 						/>
 						<Route
+							path="/order/:id"
+							element={<OrderDetail />}
+						/>
+						<Route
 							path="/profile"
 							element={<Profile />}
 						/>
 					</Route>
 				</Route>
 
-				{/* --- KHU VỰC 3: CATCH ALL (404) --- */}
+				{/* --- KHU VỰC 3: ADMIN (Có Header/Footer) --- */}
+				<Route element={<AdminRoute />}>
+					<Route
+						path="/admin"
+						element={<AdminLayout />}>
+						<Route
+							index
+							element={<Dashboard />}
+						/>
+						<Route
+							path="dashboard"
+							element={<Dashboard />}
+						/>
+						<Route
+							path="orders"
+							element={<AdminOrders />}
+						/>
+						<Route
+							path="users"
+							element={<AdminUsers />}
+						/>{" "}
+						{/* Route Quản lý KH */}
+						{/* Routes Quản lý Sản phẩm */}
+						<Route
+							path="products"
+							element={<AdminProducts />}
+						/>
+						<Route
+							path="products/new"
+							element={<AdminProductForm />}
+						/>{" "}
+						{/* Form Thêm */}
+						<Route
+							path="products/edit/:slug"
+							element={<AdminProductForm />}
+						/>
+						<Route
+							path="categories"
+							element={<AdminCategories />}
+						/>
+						<Route
+							path="brands"
+							element={<AdminBrands />}
+						/>
+					</Route>
+				</Route>
+
+				{/* --- KHU VỰC 4: CATCH ALL (404) --- */}
 				<Route
 					path="*"
 					element={<NotFound />}

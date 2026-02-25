@@ -42,3 +42,30 @@ export const PrivateRoute = () => {
 		/>
 	);
 };
+
+/**
+ * 3. AdminRoute: Chỉ dành cho Admin
+ */
+export const AdminRoute = () => {
+	const { user, isLoggedIn } = useSelector((state) => state.auth);
+
+	if (!isLoggedIn) {
+		return (
+			<Navigate
+				to="/login"
+				replace
+			/>
+		);
+	}
+
+	if (user?.role !== "admin") {
+		return (
+			<Navigate
+				to="/"
+				replace
+			/>
+		);
+	}
+
+	return <Outlet />;
+};

@@ -410,12 +410,20 @@ const Shop = () => {
 									</span>
 
 									{/* Tag Category (Dùng Slug để tìm) */}
+									{/* TÌM DÒNG NÀY */}
 									{filter.category && (
 										<span className="px-3 py-1 bg-white border border-orange-200 rounded-full text-xs font-medium text-orange-700 flex items-center shadow-sm">
+											{/* SỬA LẠI ĐIỀU KIỆN SO SÁNH TRONG FIND (.slug hoặc ._id tùy thuộc vào URL bạn đang dùng) */}
 											{categories.find(
 												(c) =>
-													c.slug === filter.category,
-											)?.name || "Danh mục"}
+													c._id === filter.category,
+											)?.name ||
+												categories.find(
+													(c) =>
+														c.slug ===
+														filter.category,
+												)?.name ||
+												"Danh mục"}
 											<button
 												onClick={() =>
 													handleCategoryChange(

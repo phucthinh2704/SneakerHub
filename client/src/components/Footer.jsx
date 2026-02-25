@@ -130,8 +130,7 @@ const Footer = () => {
 									size={20}
 								/>
 								<span>
-									123 Đường Nguyễn Văn Linh, Quận 7, TP. Hồ
-									Chí Minh
+									123 Đường Nguyễn Văn Linh, Phường Tân An, TP. Cần Thơ
 								</span>
 							</li>
 							<li className="flex items-center">

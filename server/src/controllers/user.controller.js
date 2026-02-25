@@ -80,7 +80,6 @@ const authUser = async (req, res) => {
 };
 
 // --- 3. LẤY PROFILE ---
-// API này KHÔNG cần trả về token mới, chỉ lấy dữ liệu
 const getUserProfile = async (req, res) => {
 	try {
 		const user = await User.findById(req.user._id);
@@ -115,6 +114,7 @@ const updateUserProfile = async (req, res) => {
 			user.email = req.body.email || user.email;
 			user.phone = req.body.phone || user.phone;
 			user.address = req.body.address || user.address;
+			user.avatar = req.body.avatar || user.avatar; // <--- THÊM DÒNG NÀY
 
 			if (req.body.password) {
 				user.password = req.body.password;
@@ -131,9 +131,9 @@ const updateUserProfile = async (req, res) => {
 					email: updatedUser.email,
 					phone: updatedUser.phone,
 					address: updatedUser.address,
+					avatar: updatedUser.avatar, // <--- THÊM DÒNG NÀY
 					role: updatedUser.role,
 				},
-				// Trả về token mới để "làm mới" phiên đăng nhập
 				token: generateToken(updatedUser._id),
 			});
 		} else {
@@ -144,9 +144,98 @@ const updateUserProfile = async (req, res) => {
 	}
 };
 
+// --- LẤY TẤT CẢ USER (DÀNH CHO ADMIN) ---
+const getAllUsers = async (req, res) => {
+	try {
+		const pageSize = Number(req.query.limit) || 10;
+		const page = Number(req.query.page) || 1;
+
+		// Tìm kiếm theo tên hoặc email
+		const keyword = req.query.keyword
+			? {
+					$or: [
+						{ name: { $regex: req.query.keyword, $options: "i" } },
+						{ email: { $regex: req.query.keyword, $options: "i" } },
+					],
+				}
+			: {};
+
+		// Sắp xếp
+		let sortOption = { createdAt: -1 }; // Mới nhất
+		if (req.query.sort === "oldest") sortOption = { createdAt: 1 };
+		if (req.query.sort === "name_asc") sortOption = { name: 1 };
+		if (req.query.sort === "name_desc") sortOption = { name: -1 };
+
+		const count = await User.countDocuments({ ...keyword });
+		const users = await User.find({ ...keyword })
+			.select("-password")
+			.sort(sortOption)
+			.limit(pageSize)
+			.skip(pageSize * (page - 1));
+
+		res.json({
+			success: true,
+			result: users,
+			page,
+			pages: Math.ceil(count / pageSize),
+			total: count,
+		});
+	} catch (error) {
+		res.status(500).json({ success: false, message: error.message });
+	}
+};
+const deleteUser = async (req, res) => {
+	try {
+		const user = await User.findById(req.params.id);
+		if (!user)
+			return res
+				.status(404)
+				.json({ success: false, message: "Không tìm thấy người dùng" });
+		if (user.role === "admin")
+			return res.status(400).json({
+				success: false,
+				message: "Không thể xóa tài khoản Admin",
+			});
+
+		await user.deleteOne();
+		res.json({ success: true, message: "Đã xóa người dùng" });
+	} catch (error) {
+		res.status(500).json({ success: false, message: error.message });
+	}
+};
+
+// 3. THÊM MỚI: Cập nhật quyền (Role)
+const updateUserRole = async (req, res) => {
+	try {
+		const user = await User.findById(req.params.id);
+		if (!user)
+			return res
+				.status(404)
+				.json({ success: false, message: "Không tìm thấy người dùng" });
+
+		user.role = req.body.role || user.role;
+		const updatedUser = await user.save();
+
+		res.json({
+			success: true,
+			message: "Cập nhật quyền thành công",
+			result: {
+				_id: updatedUser._id,
+				name: updatedUser.name,
+				role: updatedUser.role,
+			},
+		});
+	} catch (error) {
+		res.status(500).json({ success: false, message: error.message });
+	}
+};
+
 module.exports = {
 	registerUser,
 	authUser,
 	getUserProfile,
 	updateUserProfile,
+	getAllUsers,
+	deleteUser,
+	updateUserRole,
 };

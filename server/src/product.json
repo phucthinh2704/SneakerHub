@@ -1590,5 +1590,1097 @@
 				"price": 2400000
 			}
 		]
+	},
+	{
+		"name": "Adidas Copa Pure IV League TF",
+		"slug": "adidas-copa-pure-iv-league-tf",
+		"_brandSlug": "adidas",
+		"_categorySlug": "giay-bong-da",
+		"description": "Dòng giày bóng đá cổ điển bằng da thật, mang lại cảm giác chạm bóng êm ái và sự thoải mái tối đa trên mặt sân cỏ nhân tạo.",
+		"price": 1950000,
+		"discountPrice": 1800000,
+		"rating": 4.6,
+		"numReviews": 15,
+		"isPublished": true,
+		"variants": [
+			{
+				"color": "White/Silver",
+				"hexCode": "#FFFFFF",
+				"images": [
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771838896/1_aty26o.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771838895/2_buqyss.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771838895/3_wo2k5g.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771838895/4_h4inhf.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771838896/5_sqs3o9.jpg"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 10 },
+					{ "size": 40, "quantity": 15 },
+					{ "size": 41, "quantity": 20 },
+					{ "size": 42, "quantity": 15 },
+					{ "size": 43, "quantity": 5 }
+				],
+				"sku": "ADI-COPA-WHT-SLV",
+				"price": 1950000
+			}
+		]
+	},
+	{
+		"name": "Adidas F50 League TF",
+		"slug": "adidas-f50-league-tf",
+		"_brandSlug": "adidas",
+		"_categorySlug": "giay-bong-da",
+		"description": "Sự trở lại của huyền thoại tốc độ F50. Trọng lượng siêu nhẹ cùng bộ đế TF bám sân giúp những pha bứt tốc trở nên không thể cản phá.",
+		"price": 2100000,
+		"discountPrice": 0,
+		"rating": 4.8,
+		"numReviews": 30,
+		"isPublished": true,
+		"variants": [
+			{
+				"color": "Blue/Pink",
+				"hexCode": "#0000FF",
+				"images": [
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771838917/1_kdfj10.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771838917/2_jhbgpm.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771838917/3_gzsjyh.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771838918/4_tgr8rd.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771838917/5_gxxza6.jpg"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 10 },
+					{ "size": 40, "quantity": 15 },
+					{ "size": 41, "quantity": 20 },
+					{ "size": 42, "quantity": 15 },
+					{ "size": 43, "quantity": 5 }
+				],
+				"sku": "ADI-F50-BLU-PNK",
+				"price": 2100000
+			},
+			{
+				"color": "Blue/Pink Alternate",
+				"hexCode": "#FFC0CB",
+				"images": [
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839112/1_kzcouu.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839112/2_ompjce.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839112/3_skgw3k.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839112/4_dp0c9j.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839112/5_pu8htd.jpg"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 10 },
+					{ "size": 40, "quantity": 15 },
+					{ "size": 41, "quantity": 20 },
+					{ "size": 42, "quantity": 15 },
+					{ "size": 43, "quantity": 5 }
+				],
+				"sku": "ADI-F50-BLU-PNK-ALT",
+				"price": 2100000
+			},
+			{
+				"color": "Orange/Blue",
+				"hexCode": "#FFA500",
+				"images": [
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839166/1_s4b9ro.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839166/2_cyhfcj.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839166/3_zxunkx.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839167/4_e9werm.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839169/5_ykq6qq.jpg"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 10 },
+					{ "size": 40, "quantity": 15 },
+					{ "size": 41, "quantity": 20 },
+					{ "size": 42, "quantity": 15 },
+					{ "size": 43, "quantity": 5 }
+				],
+				"sku": "ADI-F50-ORG-BLU",
+				"price": 2100000
+			},
+			{
+				"color": "Purple/White/Yellow",
+				"hexCode": "#800080",
+				"images": [
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839174/1_fso5xn.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839175/2_uc21rr.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839175/3_atoj1l.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839176/4_mltqer.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839184/5_x81suf.jpg"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 10 },
+					{ "size": 40, "quantity": 15 },
+					{ "size": 41, "quantity": 20 },
+					{ "size": 42, "quantity": 15 },
+					{ "size": 43, "quantity": 5 }
+				],
+				"sku": "ADI-F50-PURP-WHT",
+				"price": 2100000
+			},
+			{
+				"color": "Black/Silver/Yellow",
+				"hexCode": "#000000",
+				"images": [
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839260/1_dvhtyd.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839260/2_wrv1kf.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839261/3_vrgzfn.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839261/4_ek9z1x.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839265/5_hhtkws.jpg"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 10 },
+					{ "size": 40, "quantity": 15 },
+					{ "size": 41, "quantity": 20 },
+					{ "size": 42, "quantity": 15 },
+					{ "size": 43, "quantity": 5 }
+				],
+				"sku": "ADI-F50-BLK-SLV",
+				"price": 2100000
+			},
+			{
+				"color": "Solar Yellow",
+				"hexCode": "#CCFF00",
+				"images": [
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839270/1_agv7yx.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839271/2_rvwhqt.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839271/3_zluunr.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839272/4_vg57oj.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839276/5_je8ldx.jpg"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 10 },
+					{ "size": 40, "quantity": 15 },
+					{ "size": 41, "quantity": 20 },
+					{ "size": 42, "quantity": 15 },
+					{ "size": 43, "quantity": 5 }
+				],
+				"sku": "ADI-F50-SYEL",
+				"price": 2100000
+			}
+		]
+	},
+	{
+		"name": "Adidas F50 Messi League TF",
+		"slug": "adidas-f50-messi-league-tf",
+		"_brandSlug": "adidas",
+		"_categorySlug": "giay-bong-da",
+		"description": "Phiên bản F50 đặc biệt lấy cảm hứng từ Lionel Messi. Thiết kế dành riêng cho những pha rê dắt lắt léo.",
+		"price": 2200000,
+		"discountPrice": 1990000,
+		"rating": 4.9,
+		"numReviews": 45,
+		"isPublished": true,
+		"variants": [
+			{
+				"color": "Mint Green/White",
+				"hexCode": "#98FF98",
+				"images": [
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839317/1_zc91h9.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839317/2_wn6svp.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839318/3_cyzsww.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839322/4_tqi3sp.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839323/5_i228lj.jpg"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 10 },
+					{ "size": 40, "quantity": 15 },
+					{ "size": 41, "quantity": 20 },
+					{ "size": 42, "quantity": 15 },
+					{ "size": 43, "quantity": 5 }
+				],
+				"sku": "ADI-F50-MESSI-MINT",
+				"price": 2200000
+			}
+		]
+	},
+	{
+		"name": "Adidas F50 Pro TF",
+		"slug": "adidas-f50-pro-tf",
+		"_brandSlug": "adidas",
+		"_categorySlug": "giay-bong-da",
+		"description": "Phân khúc Pro cao cấp của dòng F50. Upper mỏng nhẹ cùng lớp đệm Lightstrike mang lại phản hồi năng lượng cực tốt.",
+		"price": 3200000,
+		"discountPrice": 0,
+		"rating": 4.8,
+		"numReviews": 20,
+		"isPublished": true,
+		"variants": [
+			{
+				"color": "Pink",
+				"hexCode": "#FFC0CB",
+				"images": [
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839459/1_goitke.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839460/2_zezp7e.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839460/3_g4w6pn.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839461/4_i2qs6n.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839462/5_ovqtiw.jpg"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 10 },
+					{ "size": 40, "quantity": 15 },
+					{ "size": 41, "quantity": 20 },
+					{ "size": 42, "quantity": 15 },
+					{ "size": 43, "quantity": 5 }
+				],
+				"sku": "ADI-F50-PRO-PNK",
+				"price": 3200000
+			},
+			{
+				"color": "Orange/Blue",
+				"hexCode": "#FFA500",
+				"images": [
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839469/1_jeav0p.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839470/2_nlcj4w.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839471/3_wh8wdp.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839472/4_eoxakn.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839475/5_uxrssa.jpg"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 10 },
+					{ "size": 40, "quantity": 15 },
+					{ "size": 41, "quantity": 20 },
+					{ "size": 42, "quantity": 15 },
+					{ "size": 43, "quantity": 5 }
+				],
+				"sku": "ADI-F50-PRO-ORG-BLU",
+				"price": 3200000
+			}
+		]
+	},
+	{
+		"name": "Adidas Predator 25 League L TF",
+		"slug": "adidas-predator-25-league-l-tf",
+		"_brandSlug": "adidas",
+		"_categorySlug": "giay-bong-da",
+		"description": "Kỷ niệm 25 năm dòng giày Predator huyền thoại. Các vân cao su Strikeskin hỗ trợ kiểm soát và xoáy bóng hoàn hảo.",
+		"price": 2300000,
+		"discountPrice": 0,
+		"rating": 4.7,
+		"numReviews": 35,
+		"isPublished": true,
+		"variants": [
+			{
+				"color": "Black/Solar Yellow",
+				"hexCode": "#000000",
+				"images": [
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839486/1_kstu4o.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839487/2_knnng1.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839487/3_y5v8vb.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839491/5_f8ly73.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839491/4_xkogdh.jpg"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 10 },
+					{ "size": 40, "quantity": 15 },
+					{ "size": 41, "quantity": 20 },
+					{ "size": 42, "quantity": 15 },
+					{ "size": 43, "quantity": 5 }
+				],
+				"sku": "ADI-PRED25-BLK-SYEL",
+				"price": 2300000
+			},
+			{
+				"color": "Orange/Blue",
+				"hexCode": "#FFA500",
+				"images": [
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839496/1_ebq7zo.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839500/2_c8crjk.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839500/3_dbqeif.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839503/4_j5ca1b.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839506/5_yap1vf.jpg"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 10 },
+					{ "size": 40, "quantity": 15 },
+					{ "size": 41, "quantity": 20 },
+					{ "size": 42, "quantity": 15 },
+					{ "size": 43, "quantity": 5 }
+				],
+				"sku": "ADI-PRED25-ORG-BLU",
+				"price": 2300000
+			}
+		]
+	},
+	{
+		"name": "Adidas Predator Accuracy.1 TF",
+		"slug": "adidas-predator-accuracy-1-tf",
+		"_brandSlug": "adidas",
+		"_categorySlug": "giay-bong-da",
+		"description": "Độ chính xác tuyệt đối. Phân khúc .1 cao cấp nhất chuyên dành cho mặt sân cỏ nhân tạo với bộ đệm Bounce siêu êm.",
+		"price": 3500000,
+		"discountPrice": 3100000,
+		"rating": 4.9,
+		"numReviews": 18,
+		"isPublished": true,
+		"variants": [
+			{
+				"color": "White/Solar Yellow",
+				"hexCode": "#FFFFFF",
+				"images": [
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839671/1_tvzl29.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839671/2_il5mcr.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839671/3_slwk8t.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839671/4_ybdwhe.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839672/5_ey4miq.jpg"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 10 },
+					{ "size": 40, "quantity": 15 },
+					{ "size": 41, "quantity": 20 },
+					{ "size": 42, "quantity": 15 },
+					{ "size": 43, "quantity": 5 }
+				],
+				"sku": "ADI-PRED-ACC1-WHT",
+				"price": 3500000
+			}
+		]
+	},
+	{
+		"name": "Adidas X Crazyfast League TF",
+		"slug": "adidas-x-crazyfast-league-tf",
+		"_brandSlug": "adidas",
+		"_categorySlug": "giay-bong-da",
+		"description": "Tốc độ chớp nhoáng. Lớp upper Aeropacity Speedskin mang lại cảm giác bóng thật chân và trọng lượng tối ưu.",
+		"price": 1950000,
+		"discountPrice": 0,
+		"rating": 4.5,
+		"numReviews": 22,
+		"isPublished": true,
+		"variants": [
+			{
+				"color": "Neon Yellow/Black",
+				"hexCode": "#CCFF00",
+				"images": [
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839723/1_zabm1j.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839724/2_icq6ln.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839725/3_jj8n9q.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839730/4_k0pnft.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839730/5_vnm2u7.jpg"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 10 },
+					{ "size": 40, "quantity": 15 },
+					{ "size": 41, "quantity": 20 },
+					{ "size": 42, "quantity": 15 },
+					{ "size": 43, "quantity": 5 }
+				],
+				"sku": "ADI-XCRAZY-NEON-BLK",
+				"price": 1950000
+			}
+		]
+	},
+	{
+		"name": "Adidas X Speedportal.3 TF",
+		"slug": "adidas-x-speedportal-3-tf",
+		"_brandSlug": "adidas",
+		"_categorySlug": "giay-bong-da",
+		"description": "Mở ra cổng không gian tốc độ. Thiết kế ôm chân với đệm gót EVA hỗ trợ sự ổn định khi chuyển hướng nhanh.",
+		"price": 1800000,
+		"discountPrice": 1500000,
+		"rating": 4.4,
+		"numReviews": 40,
+		"isPublished": true,
+		"variants": [
+			{
+				"color": "Orange/Black",
+				"hexCode": "#FFA500",
+				"images": [
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839737/1_bpi7ox.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839740/2_mtbf8a.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839741/3_da3fww.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839742/4_ojopeg.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839745/5_dswv7u.jpg"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 10 },
+					{ "size": 40, "quantity": 15 },
+					{ "size": 41, "quantity": 20 },
+					{ "size": 42, "quantity": 15 },
+					{ "size": 43, "quantity": 5 }
+				],
+				"sku": "ADI-XSPEED-ORG-BLK",
+				"price": 1800000
+			}
+		]
+	},
+	{
+		"name": "Nike Phantom GX 2 / Luna 2 Academy TF",
+		"slug": "nike-phantom-gx2-luna2-academy-tf",
+		"_brandSlug": "nike",
+		"_categorySlug": "giay-bong-da",
+		"description": "Dòng sản phẩm kiểm soát bóng đỉnh cao của Nike với lưới phủ NikeSkin mở rộng vùng tiếp xúc bóng.",
+		"price": 2100000,
+		"discountPrice": 0,
+		"rating": 4.6,
+		"numReviews": 25,
+		"isPublished": true,
+		"variants": [
+			{
+				"color": "Blue/White (GX 2)",
+				"hexCode": "#0000FF",
+				"images": [
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839749/1_ukswlt.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839750/2_ationl.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839752/3_arftlq.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839755/4_xbgumg.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771839756/5_vwlvxr.jpg"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 10 },
+					{ "size": 40, "quantity": 15 },
+					{ "size": 41, "quantity": 20 },
+					{ "size": 42, "quantity": 15 },
+					{ "size": 43, "quantity": 5 }
+				],
+				"sku": "NIKE-PHAN-GX2-BLU",
+				"price": 2100000
+			},
+			{
+				"color": "Orange/Blue (Haaland Edition)",
+				"hexCode": "#FFA500",
+				"images": [
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771840148/1_ytjr38.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771840150/2_x10bc2.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771840150/3_falltd.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771840312/4_mnb4be.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771840154/5_vs3ece.jpg"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 10 },
+					{ "size": 40, "quantity": 15 },
+					{ "size": 41, "quantity": 20 },
+					{ "size": 42, "quantity": 15 },
+					{ "size": 43, "quantity": 5 }
+				],
+				"sku": "NIKE-PHAN-GX2-HLD",
+				"price": 2200000
+			},
+			{
+				"color": "Mint Green (Luna 2)",
+				"hexCode": "#98FF98",
+				"images": [
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771840352/1_k4aij7.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771840353/2_jxzjme.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771840356/3_ojqkjm.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771840358/4_mlorq2.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771840359/5_zi6onc.jpg"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 10 },
+					{ "size": 40, "quantity": 15 },
+					{ "size": 41, "quantity": 20 },
+					{ "size": 42, "quantity": 15 },
+					{ "size": 43, "quantity": 5 }
+				],
+				"sku": "NIKE-PHAN-LN2-MINT",
+				"price": 2100000
+			},
+			{
+				"color": "Coral Pink (Luna 2)",
+				"hexCode": "#FFC0CB",
+				"images": [
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771840378/1_gflduf.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771840380/2_xovsne.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771840383/3_ncyn3v.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771840390/4_gqazxf.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771840391/5_g5ft3q.jpg"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 10 },
+					{ "size": 40, "quantity": 15 },
+					{ "size": 41, "quantity": 20 },
+					{ "size": 42, "quantity": 15 },
+					{ "size": 43, "quantity": 5 }
+				],
+				"sku": "NIKE-PHAN-LN2-PNK",
+				"price": 2100000
+			}
+		]
+	},
+	{
+		"name": "Nike Tiempo Ligera/Maestro TF",
+		"slug": "nike-tiempo-ligera-maestro-tf",
+		"_brandSlug": "nike",
+		"_categorySlug": "giay-bong-da",
+		"description": "Dòng giày huyền thoại với chất liệu da đem lại sự thoải mái tuyệt đối cho đôi bàn chân.",
+		"price": 1900000,
+		"discountPrice": 0,
+		"rating": 4.5,
+		"numReviews": 10,
+		"isPublished": true,
+		"variants": [
+			{
+				"color": "Black/Navy Blue",
+				"hexCode": "#000000",
+				"images": [
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771841820/1_i7yk4j.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771841821/2_zprj2g.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771841821/3_vbxhfe.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771841823/4_ywkrnh.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771841827/5_np0tst.jpg"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 10 },
+					{ "size": 40, "quantity": 15 },
+					{ "size": 41, "quantity": 20 },
+					{ "size": 42, "quantity": 15 },
+					{ "size": 43, "quantity": 5 }
+				],
+				"sku": "NIKE-TIEMPO-BLK-NVY",
+				"price": 1900000
+			},
+			{
+				"color": "White/Black",
+				"hexCode": "#FFFFFF",
+				"images": [
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771841832/1_ayc8j4.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771841834/2_vhiqip.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771841836/3_gh2jn3.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771841839/4_j9k6vy.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771841841/5_f9e5g0.jpg"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 10 },
+					{ "size": 40, "quantity": 15 },
+					{ "size": 41, "quantity": 20 },
+					{ "size": 42, "quantity": 15 },
+					{ "size": 43, "quantity": 5 }
+				],
+				"sku": "NIKE-TIEMPO-WHT-BLK",
+				"price": 1900000
+			},
+			{
+				"color": "White/Blue",
+				"hexCode": "#FFFFFF",
+				"images": [
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771841844/1_vhbsyq.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771841845/2_lpcjdp.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771841848/3_wqjjym.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771841865/4_usvb6n.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771841878/5_tia76e.jpg"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 10 },
+					{ "size": 40, "quantity": 15 },
+					{ "size": 41, "quantity": 20 },
+					{ "size": 42, "quantity": 15 },
+					{ "size": 43, "quantity": 5 }
+				],
+				"sku": "NIKE-TIEMPO-WHT-BLU",
+				"price": 1900000
+			}
+		]
+	},
+	{
+		"name": "Nike Zoom Mercurial 10",
+		"slug": "nike-zoom-mercurial-academy-tf",
+		"_brandSlug": "nike",
+		"_categorySlug": "giay-bong-da",
+		"description": "Phân khúc phổ thông của dòng giày bứt tốc quốc dân. Trang bị đệm Zoom Air túi nhỏ ở gót giúp đàn hồi tốt hơn.",
+		"price": 2300000,
+		"discountPrice": 0,
+		"rating": 4.8,
+		"numReviews": 60,
+		"isPublished": true,
+		"variants": [
+			{
+				"color": "Yellow/Orange (KM Edition)",
+				"hexCode": "#FFFF00",
+				"images": [
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771842049/1_n2k9po.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771842045/2_tr4dxe.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771842048/3_rprndb.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771842048/4_rp6esr.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771842050/5_dkzckk.jpg"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 10 },
+					{ "size": 40, "quantity": 15 },
+					{ "size": 41, "quantity": 20 },
+					{ "size": 42, "quantity": 15 },
+					{ "size": 43, "quantity": 5 }
+				],
+				"sku": "NIKE-MERC-KM-YEL",
+				"price": 2400000
+			},
+			{
+				"color": "Peach/Teal (KM Edition)",
+				"hexCode": "#FFDAB9",
+				"images": [
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771842057/1_mmwxod.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771842059/2_ufn1rs.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771842059/3_dapjxi.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771842065/4_qqqgsq.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771842064/5_ab9crh.jpg"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 10 },
+					{ "size": 40, "quantity": 15 },
+					{ "size": 41, "quantity": 20 },
+					{ "size": 42, "quantity": 15 },
+					{ "size": 43, "quantity": 5 }
+				],
+				"sku": "NIKE-MERC-KM-PCH",
+				"price": 2400000
+			},
+			{
+				"color": "Black/Blue",
+				"hexCode": "#000000",
+				"images": [
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771842070/1_xclobl.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771842070/2_vkzdiv.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771842076/3_unl4sl.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771842082/4_i9pjsj.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771842082/5_gltrgf.jpg"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 10 },
+					{ "size": 40, "quantity": 15 },
+					{ "size": 41, "quantity": 20 },
+					{ "size": 42, "quantity": 15 },
+					{ "size": 43, "quantity": 5 }
+				],
+				"sku": "NIKE-MERC-ACA-BLK",
+				"price": 2300000
+			},
+			{
+				"color": "Fuchsia/Orange",
+				"hexCode": "#800080",
+				"images": [
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771842279/1_twsnju.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771842281/2_z1itil.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771842286/3_eht5c8.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771842328/4_azcslo.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771842327/5_q3q84t.jpg"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 10 },
+					{ "size": 40, "quantity": 15 },
+					{ "size": 41, "quantity": 20 },
+					{ "size": 42, "quantity": 15 },
+					{ "size": 43, "quantity": 5 }
+				],
+				"sku": "NIKE-MERC-ACA-FUC",
+				"price": 2300000
+			},
+			{
+				"color": "Red/White",
+				"hexCode": "#FF0000",
+				"images": [
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771842376/1_ku5f6b.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771842384/2_rrdz6f.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771842384/3_yqcrjx.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771842390/4_jrvkng.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771842394/5_j26nnv.jpg"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 10 },
+					{ "size": 40, "quantity": 15 },
+					{ "size": 41, "quantity": 20 },
+					{ "size": 42, "quantity": 15 },
+					{ "size": 43, "quantity": 5 }
+				],
+				"sku": "NIKE-MERC-ACA-RED",
+				"price": 2300000
+			}
+		]
+	},
+	{
+		"name": "Nike Zoom Mercurial Vapor 16 Pro TF",
+		"slug": "nike-zoom-mercurial-vapor-16-pro-tf",
+		"_brandSlug": "nike",
+		"_categorySlug": "giay-bong-da",
+		"description": "Phân khúc Pro với sợi dệt Flyknit ôm sát bàn chân, cùng đệm Zoom Air kích thước lớn mang lại độ phản hồi cực căng.",
+		"price": 3400000,
+		"discountPrice": 3200000,
+		"rating": 4.9,
+		"numReviews": 28,
+		"isPublished": true,
+		"variants": [
+			{
+				"color": "Blue/White",
+				"hexCode": "#0000FF",
+				"images": [
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771842518/1_synztm.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771842519/2_ejso4b.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771842524/3_frhjfc.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771842526/4_nbevzl.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771842530/5_w3gmew.jpg"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 10 },
+					{ "size": 40, "quantity": 15 },
+					{ "size": 41, "quantity": 20 },
+					{ "size": 42, "quantity": 15 },
+					{ "size": 43, "quantity": 5 }
+				],
+				"sku": "NIKE-VAPOR-PRO-BLU",
+				"price": 3400000
+			},
+			{
+				"color": "Red/White",
+				"hexCode": "#FF0000",
+				"images": [
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771896012/1_fwmyj3.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771896012/2_wurp76.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771896012/3_jedv1w.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771896012/4_cmclcj.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771896013/5_oi1rsx.jpg"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 10 },
+					{ "size": 40, "quantity": 15 },
+					{ "size": 41, "quantity": 20 },
+					{ "size": 42, "quantity": 15 },
+					{ "size": 43, "quantity": 5 }
+				],
+				"sku": "NIKE-VAPOR-PRO-RED",
+				"price": 3400000
+			}
+		]
+	},
+	{
+		"name": "Puma Future 8 Pro Cage",
+		"slug": "puma-future-8-pro-cage",
+		"_brandSlug": "puma",
+		"_categorySlug": "giay-bong-da",
+		"description": "Dải băng FuzionFit nén chặt bàn chân giúp bạn bứt phá linh hoạt mà không cần phải thắt dây quá chặt.",
+		"price": 2800000,
+		"discountPrice": 2500000,
+		"rating": 4.7,
+		"numReviews": 12,
+		"isPublished": true,
+		"variants": [
+			{
+				"color": "Black/Purple",
+				"hexCode": "#000000",
+				"images": [
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771896106/1_lypelf.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771896106/2_ncoqxa.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771896112/3_gfe3yq.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771896111/4_k1s1nr.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771896112/5_lfdjzb.jpg"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 10 },
+					{ "size": 40, "quantity": 15 },
+					{ "size": 41, "quantity": 20 },
+					{ "size": 42, "quantity": 15 },
+					{ "size": 43, "quantity": 5 }
+				],
+				"sku": "PUMA-FUT8-BLK-PURP",
+				"price": 2800000
+			},
+			{
+				"color": "Luminous Green/Black",
+				"hexCode": "#39FF14",
+				"images": [
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771896154/1_qgppra.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771896153/2_jhvelz.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771896178/3_da660m.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771896177/4_oy6l41.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771896159/5_bxlr1p.jpg"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 10 },
+					{ "size": 40, "quantity": 15 },
+					{ "size": 41, "quantity": 20 },
+					{ "size": 42, "quantity": 15 },
+					{ "size": 43, "quantity": 5 }
+				],
+				"sku": "PUMA-FUT8-GRN-BLK",
+				"price": 2800000
+			},
+			{
+				"color": "White/Orange",
+				"hexCode": "#FFFFFF",
+				"images": [
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771896180/1_ftzbkz.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771896204/2_aq3iez.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771896225/3_f98r3x.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771896328/4_m2mpoi.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771896230/5_zaqxhs.jpg"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 10 },
+					{ "size": 40, "quantity": 15 },
+					{ "size": 41, "quantity": 20 },
+					{ "size": 42, "quantity": 15 },
+					{ "size": 43, "quantity": 5 }
+				],
+				"sku": "PUMA-FUT8-WHT-ORG",
+				"price": 2800000
+			}
+		]
+	},
+	{
+		"name": "Puma King Match TT",
+		"slug": "puma-king-tt",
+		"_brandSlug": "puma",
+		"_categorySlug": "giay-bong-da",
+		"description": "Puma King với công nghệ K-Better thay thế da Kangaroo truyền thống, mang lại cảm giác mềm mại thân thiện với môi trường.",
+		"price": 2200000,
+		"discountPrice": 0,
+		"rating": 4.5,
+		"numReviews": 8,
+		"isPublished": true,
+		"variants": [
+			{
+				"color": "Yellow/Black",
+				"hexCode": "#FFFF00",
+				"images": [
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771896409/1_fwetzm.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771896409/2_irglae.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771896411/3_hl3rfp.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771896410/4_vxz4uj.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771896410/5_udhaua.jpg"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 10 },
+					{ "size": 40, "quantity": 15 },
+					{ "size": 41, "quantity": 20 },
+					{ "size": 42, "quantity": 15 },
+					{ "size": 43, "quantity": 5 }
+				],
+				"sku": "PUMA-KING-MAT-YEL",
+				"price": 1900000
+			}
+		]
+	},
+	{
+		"name": "Puma Ultra Match TT",
+		"slug": "puma-ultra-match-tt",
+		"_brandSlug": "puma",
+		"_categorySlug": "giay-bong-da",
+		"description": "Khung sườn siêu nhẹ Ultraweave được trang bị tinh chỉnh tối ưu hỗ trợ chuyển động nhanh nhẹn, ôm chân chắc chắn và phản hồi nhạy trên dòng Ultra giúp tốc độ của bạn đạt đến cực hạn trên sân 5 - 7 người.",
+		"price": 2000000,
+		"discountPrice": 0,
+		"rating": 4.8,
+		"numReviews": 39,
+		"isPublished": true,
+		"variants": [
+			{
+				"color": "Pink/Black",
+				"hexCode": "#FFC0CB",
+				"images": [
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771897217/1_e4tluq.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771897225/2_pzqwzp.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771897227/3_e5elxn.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771897226/4_bavspn.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771897228/5_vnwkk0.jpg"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 10 },
+					{ "size": 40, "quantity": 15 },
+					{ "size": 41, "quantity": 20 },
+					{ "size": 42, "quantity": 15 },
+					{ "size": 43, "quantity": 5 }
+				],
+				"sku": "PUMA-ULT-MAT-PNK",
+				"price": 1950000
+			},
+			{
+				"color": "Yellow Orange",
+				"hexCode": "#FFA500",
+				"images": [
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771897217/1_d8piun.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771897217/2_sgcobx.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771897217/3_o1pwpa.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771897218/4_kqtbbi.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771897225/5_jpfqto.jpg"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 10 },
+					{ "size": 40, "quantity": 15 },
+					{ "size": 41, "quantity": 20 },
+					{ "size": 42, "quantity": 15 },
+					{ "size": 43, "quantity": 5 }
+				],
+				"sku": "PUMA-ULT-MAT-YEL",
+				"price": 1950000
+			},
+			{
+				"color": "Pink/Blue",
+				"hexCode": "#FFC0CB",
+				"images": [
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771897399/1_yzkqe2.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771897396/2_vcad23.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771897397/3_crmwfg.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771897401/4_b71voe.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771897398/5_o3k4nr.jpg"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 10 },
+					{ "size": 40, "quantity": 15 },
+					{ "size": 41, "quantity": 20 },
+					{ "size": 42, "quantity": 15 },
+					{ "size": 43, "quantity": 5 }
+				],
+				"sku": "PUMA-ULT6-MAT-PNK",
+				"price": 2100000
+			}
+		]
+	},
+	{
+		"name": "Puma Ultra Pro Cage TT",
+		"slug": "puma-ultra-pro-cage-tt",
+		"_brandSlug": "puma",
+		"_categorySlug": "giay-bong-da",
+		"description": "Công nghệ Ultraweave siêu nhẹ kết hợp khung Cage gia cố mang đến sự ôm chân chắc chắn, hỗ trợ tăng tốc nhanh và giữ thăng bằng khi đổi hướng.",
+		"price": 2600000,
+		"discountPrice": 0,
+		"rating": 4.9,
+		"numReviews": 43,
+		"isPublished": true,
+		"variants": [
+			{
+				"color": "White/Orange",
+				"hexCode": "#FFFFFF",
+				"images": [
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771897836/1_xc1ywo.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771897824/2_xlbjql.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771897914/3_bwout8.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771897839/4_oudwp6.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771897849/5_j4zcvy.jpg"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 10 },
+					{ "size": 40, "quantity": 15 },
+					{ "size": 41, "quantity": 20 },
+					{ "size": 42, "quantity": 15 },
+					{ "size": 43, "quantity": 5 }
+				],
+				"sku": "PUMA-ULT5-PRO-WHT",
+				"price": 2800000
+			},
+			{
+				"color": "Silver/Yellow",
+				"hexCode": "#C0C0C0",
+				"images": [
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771897930/1_x1fdoy.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771897939/2_uf1heg.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771898109/3_novvra.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771898111/4_g5u542.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771898178/5_fokxs0.jpg"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 10 },
+					{ "size": 40, "quantity": 15 },
+					{ "size": 41, "quantity": 20 },
+					{ "size": 42, "quantity": 15 },
+					{ "size": 43, "quantity": 5 }
+				],
+				"sku": "PUMA-ULT5-PRO-SLV",
+				"price": 2800000
+			},
+			{
+				"color": "Blue/White/Red",
+				"hexCode": "#0000FF",
+				"images": [
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771897968/1_weaetm.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771897943/2_z5hewq.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771897976/3_jpsdpa.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771898419/4_bijlui.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771898421/5_ioqtye.jpg"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 10 },
+					{ "size": 40, "quantity": 15 },
+					{ "size": 41, "quantity": 20 },
+					{ "size": 42, "quantity": 15 },
+					{ "size": 43, "quantity": 5 }
+				],
+				"sku": "PUMA-ULT6-PRO-BLU",
+				"price": 2900000
+			}
+		]
+	},
+	{
+		"name": "Puma Ultra Ultimate Cage TT",
+		"slug": "puma-ultra-ultimate-cage-tt",
+		"_brandSlug": "puma",
+		"_categorySlug": "giay-bong-da",
+		"description": "Phiên bản đỉnh cao cho sân 5-7 người, tối ưu cả tốc độ lẫn độ ổn định. Lớp Ultraweave siêu nhẹ phối hợp với khung Cage gia cố tạo cảm giác ôm chân chắc chắn, hỗ trợ bứt phá và kiểm soát khi thay đổi hướng.",
+		"price": 3500000,
+		"discountPrice": 0,
+		"rating": 4.8,
+		"numReviews": 22,
+		"isPublished": true,
+		"variants": [
+			{
+				"color": "Lime Green",
+				"hexCode": "#98FF98",
+				"images": [
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771898717/1_p301y8.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771898719/2_giwbhp.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771898721/3_qiroii.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771898721/4_e25vrt.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771898721/5_funwzd.jpg"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 10 },
+					{ "size": 40, "quantity": 15 },
+					{ "size": 41, "quantity": 20 },
+					{ "size": 42, "quantity": 15 },
+					{ "size": 43, "quantity": 5 }
+				],
+				"sku": "PUMA-ULT-CAGE-LIME",
+				"price": 3500000
+			},
+			{
+				"color": "Yellow/White",
+				"hexCode": "#FFFF00",
+				"images": [
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771898725/1_luwxb8.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771898726/2_b1evkq.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771898726/3_ycgd7a.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771898734/4_mfceey.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771898767/5_c5me81.jpg"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 10 },
+					{ "size": 40, "quantity": 15 },
+					{ "size": 41, "quantity": 20 },
+					{ "size": 42, "quantity": 15 },
+					{ "size": 43, "quantity": 5 }
+				],
+				"sku": "PUMA-ULT-CAGE-YEL",
+				"price": 3500000
+			}
+		]
+	},
+	{
+		"name": "Puma Ultra 3.4 TT",
+		"slug": "puma-ultra-34-tt",
+		"_brandSlug": "puma",
+		"_categorySlug": "giay-bong-da",
+		"description": "Thiết kế tối ưu cho tốc độ, Puma Ultra 3.4 TT mang đến cảm giác nhẹ và thoải mái khi di chuyển liên tục. Form ôm gọn hỗ trợ tăng tốc, rê dắt và xoay trở mượt mà, kết hợp đế TF với độ bám ổn định giúp bạn tự tin bứt phá trên sân cỏ.",
+		"price": 1800000,
+		"discountPrice": 0,
+		"rating": 4.6,
+		"numReviews": 48,
+		"isPublished": true,
+		"variants": [
+			{
+				"color": "Grey/Orange",
+				"hexCode": "#808080",
+				"images": [
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771898777/1_klajmv.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771898888/2_dt5dfc.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771898855/3_z01f5m.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771898783/4_mb0n2j.jpg",
+					"https://res.cloudinary.com/ddfi4fdao/image/upload/v1771898788/5_sqdq4l.jpg"
+				],
+				"sizes": [
+					{ "size": 39, "quantity": 10 },
+					{ "size": 40, "quantity": 15 },
+					{ "size": 41, "quantity": 20 },
+					{ "size": 42, "quantity": 15 },
+					{ "size": 43, "quantity": 5 }
+				],
+				"sku": "PUMA-ULT34-GRY",
+				"price": 1800000
+			}
+		]
 	}
 ]

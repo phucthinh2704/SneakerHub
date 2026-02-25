@@ -325,6 +325,56 @@ const updateStock = async (req, res) => {
 	}
 };
 
+// --- LẤY TẤT CẢ SẢN PHẨM CHO ADMIN (Bao gồm cả sản phẩm ẩn) ---
+const getAdminProducts = async (req, res) => {
+	try {
+		const pageSize = Number(req.query.limit) || 10;
+		const page = Number(req.query.page) || 1;
+
+		const keyword = req.query.keyword
+			? { name: { $regex: req.query.keyword, $options: "i" } }
+			: {};
+
+		if (req.query.category) {
+			// 1. Tìm tất cả các danh mục con có parentId là danh mục đang chọn
+			const childCategories = await Category.find({
+				parentId: req.query.category,
+			});
+
+			// 2. Gom ID của danh mục cha và các danh mục con vào chung 1 mảng
+			const categoryIds = [
+				req.query.category,
+				...childCategories.map((c) => c._id.toString()),
+			];
+
+			// 3. Dùng $in để tìm các sản phẩm thuộc danh mục cha HOẶC danh mục con
+			keyword.category = { $in: categoryIds };
+		}
+
+		if (req.query.brand) keyword.brand = req.query.brand;
+
+		const count = await Product.countDocuments({ ...keyword });
+		const products = await Product.find({ ...keyword })
+			.populate("category", "name slug")
+			.populate("brand", "name slug")
+			.sort({ createdAt: -1 })
+			.limit(pageSize)
+			.skip(pageSize * (page - 1));
+
+		res.json({
+			success: true,
+			result: {
+				products,
+				page,
+				pages: Math.ceil(count / pageSize),
+				total: count,
+			},
+		});
+	} catch (error) {
+		res.status(500).json({ success: false, message: error.message });
+	}
+};
+
 module.exports = {
 	getProducts,
 	getProductBySlug,
@@ -333,4 +383,5 @@ module.exports = {
 	updateProduct,
 	deleteProduct,
 	updateStock,
+	getAdminProducts,
 };

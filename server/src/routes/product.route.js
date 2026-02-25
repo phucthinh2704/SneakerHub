@@ -8,6 +8,7 @@ const {
 	updateProduct,
 	deleteProduct,
 	updateStock,
+	getAdminProducts
 } = require("../controllers/product.controller");
 const {
 	createReview,
@@ -48,4 +49,5 @@ router
 // PATCH /api/products/stock/update
 router.route("/stock/update").patch(protect, admin, updateStock);
 
+router.get("/admin/all", protect, admin, getAdminProducts);
 module.exports = router;

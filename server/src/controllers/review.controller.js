@@ -1,5 +1,6 @@
 const Review = require("../models/Review");
 const Product = require("../models/Product");
+const Order = require("../models/Order");
 
 // --- TẠO REVIEW ---
 const createReview = async (req, res) => {
@@ -27,6 +28,19 @@ const createReview = async (req, res) => {
 					message: "Bạn đã đánh giá sản phẩm này rồi",
 				});
 		}
+
+		const hasBought = await Order.findOne({
+        user_id: req.user._id,
+        status: "Delivered", // Chỉ cho đánh giá khi đã nhận hàng
+        "orderItems.product": productId
+    });
+
+    if (!hasBought) {
+        return res.status(403).json({
+            success: false,
+            message: "Bạn phải mua và nhận sản phẩm này thành công mới có thể đánh giá."
+        });
+    }
 
 		// 1. Tạo Review
 		const review = await Review.create({
