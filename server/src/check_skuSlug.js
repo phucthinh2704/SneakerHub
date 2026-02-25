@@ -1,4 +1,4 @@
-const products = require("./product.json");
+const products = require("./data/product.json");
 
 // ==========================
 // 2) HÀM CHECK TRÙNG

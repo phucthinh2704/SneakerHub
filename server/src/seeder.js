@@ -9,7 +9,6 @@ const Category = require("./models/Category");
 const User = require("./models/User");
 
 // --- 1. KẾT NỐI MONGODB ---
-console.log(process.env.MONGO_URI);
 mongoose.connect("mongodb+srv://thinhphuc2704_db_user:9nxgZ4bySYi3OuZb@cluster0.zylawbc.mongodb.net/sneaker-hub", {});
 
 // --- 2. HÀM IMPORT DỮ LIỆU ---
@@ -19,7 +18,7 @@ const importData = async () => {
         
         // Đọc dữ liệu từ file JSON
         const productsRaw = JSON.parse(
-            fs.readFileSync(`${__dirname}/product.json`, "utf-8")
+            fs.readFileSync(`${__dirname}/data/product.json`, "utf-8")
         );
 
         console.log("⏳ Đang chuẩn bị dữ liệu...");

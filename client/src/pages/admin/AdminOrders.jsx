@@ -24,7 +24,7 @@ const InvoiceTemplate = React.forwardRef(({ order }, ref) => {
 						SHOE STORE
 					</h1>
 					<p className="text-sm text-gray-600 mt-2">
-						123 Nguyễn Văn Linh, Quận 7, TP.Hồ Chí Minh
+						123 Nguyễn Văn Linh, Phường Tân An, TP. Cần Thơ
 					</p>
 					<p className="text-sm text-gray-600">
 						Điện thoại: 1900 123 456 - 0909 123 456

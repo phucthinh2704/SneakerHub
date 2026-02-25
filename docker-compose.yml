@@ -1,0 +1,29 @@
+services:
+  server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    container_name: sneakerhub-server
+    ports:
+      - "5000:5000"
+    # Load biến môi trường từ file .env trong thư mục server
+    env_file:
+      - ./server/.env
+    networks:
+      - app-network
+
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    container_name: sneakerhub-client
+    ports:
+      - "5173:5173"
+    depends_on:
+      - server
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

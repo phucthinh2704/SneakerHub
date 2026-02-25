@@ -42,8 +42,7 @@ const Contact = () => {
 									Địa chỉ cửa hàng
 								</h3>
 								<p className="text-gray-600 mt-1">
-									123 Nguyễn Văn Linh, Quận 7, TP. Hồ Chí
-									Minh, Việt Nam
+									123 Nguyễn Văn Linh, Phường Tân An, TP. Cần Thơ, Việt Nam
 								</p>
 							</div>
 						</div>
