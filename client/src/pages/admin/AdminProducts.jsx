@@ -6,7 +6,7 @@ import {
 	apiUpdateProduct,
 	apiGetAllCategoriesAdmin,
 	apiGetAllBrandsAdmin,
-} from "../../api/admin"; // Đổi import API
+} from "../../api/admin";
 import Pagination from "../../components/Pagination";
 import {
 	Loader2,
@@ -17,17 +17,17 @@ import {
 	Filter,
 	Eye,
 	EyeOff,
-} from "lucide-react"; // Thêm Eye, EyeOff
+	ChevronDown,
+	Package,
+} from "lucide-react";
 import toast from "react-hot-toast";
 import Swal from "sweetalert2";
 
 const AdminProducts = () => {
 	const [products, setProducts] = useState([]);
 	const [loading, setLoading] = useState(true);
-
 	const [categories, setCategories] = useState([]);
 	const [brands, setBrands] = useState([]);
-
 	const [page, setPage] = useState(1);
 	const [totalPages, setTotalPages] = useState(1);
 	const [searchTerm, setSearchTerm] = useState("");
@@ -59,7 +59,6 @@ const AdminProducts = () => {
 				...(filterCat && { category: filterCat }),
 				...(filterBrand && { brand: filterBrand }),
 			};
-			// GỌI API ADMIN ĐỂ LẤY CẢ SẢN PHẨM ẨN
 			const res = await apiGetAdminProducts(params);
 			if (res.success) {
 				setProducts(res.result.products);
@@ -73,10 +72,8 @@ const AdminProducts = () => {
 		}
 	};
 
-	// --- TÍNH NĂNG MỚI: ẨN/HIỆN NHANH SẢN PHẨM ---
 	const handleTogglePublish = async (product) => {
 		try {
-			// Gọi API update chỉ với trường isPublished
 			const res = await apiUpdateProduct(product._id, {
 				isPublished: !product.isPublished,
 			});
@@ -86,7 +83,6 @@ const AdminProducts = () => {
 						? "Đã ẩn sản phẩm"
 						: "Đã hiển thị sản phẩm",
 				);
-				// Cập nhật lại UI
 				setProducts(
 					products.map((p) =>
 						p._id === product._id
@@ -101,18 +97,22 @@ const AdminProducts = () => {
 		}
 	};
 
-	const handleDelete = async (id) => {
+	const handleDelete = async (id, name) => {
 		const result = await Swal.fire({
-			title: "Xóa sản phẩm?",
-			text: "Sản phẩm này sẽ bị xóa vĩnh viễn khỏi hệ thống!",
+			title: `<span style="font-family:'Syne',sans-serif;font-size:1.05rem">Xóa sản phẩm?</span>`,
+			html: `<span style="font-family:'DM Sans',sans-serif;font-size:.88rem;color:#6a5a4a"><b>${name}</b> sẽ bị xóa vĩnh viễn khỏi hệ thống!</span>`,
 			icon: "warning",
 			showCancelButton: true,
 			confirmButtonColor: "#ef4444",
-			cancelButtonColor: "#6b7280",
+			cancelButtonColor: "#9ca3af",
 			confirmButtonText: "Xóa vĩnh viễn",
 			cancelButtonText: "Hủy bỏ",
+			customClass: {
+				popup: "rounded-2xl",
+				confirmButton: "rounded-xl font-bold",
+				cancelButton: "rounded-xl font-bold",
+			},
 		});
-
 		if (result.isConfirmed) {
 			try {
 				const res = await apiDeleteProduct(id);
@@ -128,48 +128,72 @@ const AdminProducts = () => {
 		}
 	};
 
+	const fmt = (n) =>
+		new Intl.NumberFormat("vi-VN", {
+			style: "currency",
+			currency: "VND",
+		}).format(n);
+
 	return (
-		<div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
-			{/* TOOLBAR */}
-			<div className="p-5 border-b border-gray-100 space-y-4">
-				<div className="flex flex-col md:flex-row justify-between items-center gap-4">
-					<h2 className="text-xl font-bold text-gray-800">
-						Quản lý Sản phẩm
-					</h2>
+		<>
+			<style>{`
+				@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=DM+Sans:wght@300;400;500;600&display=swap');
+				.adm-root { font-family:'DM Sans',sans-serif; }
+				.adm-heading { font-family:'Syne',sans-serif; }
+				.adm-row { transition: background .15s; }
+				.adm-row:hover td { background: #fdf9f6; }
+				.adm-fade { animation: admFadeUp .35s ease both; }
+				@keyframes admFadeUp { from{opacity:0;transform:translateY(10px)} to{opacity:1;transform:none} }
+			`}</style>
+
+			<div className="adm-root adm-fade">
+				{/* ── Header ── */}
+				<div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-5">
+					<div>
+						<p className="text-[10px] font-bold tracking-[.2em] uppercase text-[#c2784d] mb-0.5">
+							SoleStore Admin
+						</p>
+						<h2 className="adm-heading text-[#1a1914] text-2xl font-bold">
+							Quản lý Sản phẩm
+						</h2>
+					</div>
 					<Link
 						to="/admin/products/new"
-						className="bg-gray-900 text-white w-full md:w-auto px-4 py-2 rounded-lg font-medium flex items-center justify-center hover:bg-gray-800 transition">
-						<Plus
-							size={20}
-							className="mr-2"
-						/>{" "}
-						Thêm Sản Phẩm
+						className="inline-flex items-center gap-2 bg-[#c2784d] text-white px-5 py-2.5 rounded-xl font-bold text-sm hover:bg-[#a05e38] transition"
+						style={{
+							boxShadow: "0 4px 14px rgba(194,120,77,.35)",
+						}}>
+						<Plus size={16} /> Thêm sản phẩm
 					</Link>
 				</div>
 
-				<div className="flex flex-col md:flex-row gap-3 bg-gray-50 p-3 rounded-lg border border-gray-200">
-					<div className="relative flex-1">
-						<Search
-							className="absolute left-3 top-2.5 text-gray-400"
-							size={18}
-						/>
-						<input
-							type="text"
-							placeholder="Tìm tên sản phẩm..."
-							value={searchTerm}
-							onChange={(e) => {
-								setSearchTerm(e.target.value);
-								setPage(1);
-							}}
-							className="w-full pl-9 pr-4 py-2 text-sm border rounded-md focus:ring-2 focus:ring-orange-500 outline-none"
-						/>
-					</div>
-
-					<div className="flex flex-1 gap-3">
+				<div
+					className="bg-white border border-[#f0e5d8] rounded-2xl overflow-hidden"
+					style={{ boxShadow: "0 2px 20px rgba(194,120,77,.07)" }}>
+					{/* ── Filters ── */}
+					<div className="px-6 py-4 border-b border-[#f5ede4] flex flex-col md:flex-row gap-3">
+						{/* Search */}
 						<div className="relative flex-1">
+							<Search
+								className="absolute left-3.5 top-1/2 -translate-y-1/2 text-[#c0a890]"
+								size={15}
+							/>
+							<input
+								type="text"
+								placeholder="Tìm tên sản phẩm..."
+								value={searchTerm}
+								onChange={(e) => {
+									setSearchTerm(e.target.value);
+									setPage(1);
+								}}
+								className="w-full pl-10 pr-4 py-2.5 bg-[#fdf8f4] border border-[#e8d8cc] rounded-xl text-sm placeholder-[#c0a890] text-[#3a2818] outline-none focus:border-[#c2784d] focus:ring-2 focus:ring-[#c2784d]/15 transition"
+							/>
+						</div>
+						{/* Category filter */}
+						<div className="relative">
 							<Filter
-								className="absolute left-3 top-2.5 text-gray-400"
-								size={16}
+								className="absolute left-3 top-1/2 -translate-y-1/2 text-[#c0a890]"
+								size={13}
 							/>
 							<select
 								value={filterCat}
@@ -177,22 +201,17 @@ const AdminProducts = () => {
 									setFilterCat(e.target.value);
 									setPage(1);
 								}}
-								className="w-full pl-9 pr-2 py-2 text-sm border rounded-md outline-none focus:ring-2 focus:ring-orange-500 appearance-none bg-white">
+								className="appearance-none bg-[#fdf8f4] border border-[#e8d8cc] rounded-xl pl-9 pr-8 py-2.5 text-sm text-[#3a2818] outline-none focus:border-[#c2784d] transition cursor-pointer">
 								<option value="">Tất cả danh mục</option>
-
-								{/* Lọc ra các danh mục CHA (không có parentId) */}
 								{categories
 									.filter((c) => !c.parentId)
 									.map((parent) => (
 										<React.Fragment key={parent._id}>
-											{/* Render Danh mục Cha */}
 											<option
 												value={parent._id}
-												className="font-bold text-gray-900">
+												className="font-bold">
 												{parent.name}
 											</option>
-
-											{/* Lọc và Render các Danh mục Con tương ứng với Cha này */}
 											{categories
 												.filter(
 													(child) =>
@@ -202,20 +221,24 @@ const AdminProducts = () => {
 												.map((child) => (
 													<option
 														key={child._id}
-														value={child._id}
-														className="text-gray-600">
-														&nbsp;&nbsp;&nbsp;--{" "}
+														value={child._id}>
+														&nbsp;&nbsp;—{" "}
 														{child.name}
 													</option>
 												))}
 										</React.Fragment>
 									))}
 							</select>
+							<ChevronDown
+								size={12}
+								className="absolute right-3 top-1/2 -translate-y-1/2 text-[#a08070] pointer-events-none"
+							/>
 						</div>
-						<div className="relative flex-1">
+						{/* Brand filter */}
+						<div className="relative">
 							<Filter
-								className="absolute left-3 top-2.5 text-gray-400"
-								size={16}
+								className="absolute left-3 top-1/2 -translate-y-1/2 text-[#c0a890]"
+								size={13}
 							/>
 							<select
 								value={filterBrand}
@@ -223,7 +246,7 @@ const AdminProducts = () => {
 									setFilterBrand(e.target.value);
 									setPage(1);
 								}}
-								className="w-full pl-9 pr-2 py-2 text-sm border rounded-md outline-none focus:ring-2 focus:ring-orange-500 appearance-none bg-white">
+								className="appearance-none bg-[#fdf8f4] border border-[#e8d8cc] rounded-xl pl-9 pr-8 py-2.5 text-sm text-[#3a2818] outline-none focus:border-[#c2784d] transition cursor-pointer">
 								<option value="">Tất cả thương hiệu</option>
 								{brands.map((b) => (
 									<option
@@ -233,138 +256,197 @@ const AdminProducts = () => {
 									</option>
 								))}
 							</select>
+							<ChevronDown
+								size={12}
+								className="absolute right-3 top-1/2 -translate-y-1/2 text-[#a08070] pointer-events-none"
+							/>
 						</div>
+					</div>
+
+					{/* ── Table ── */}
+					<div className="overflow-x-auto">
+						<table className="w-full text-sm">
+							<thead>
+								<tr className="bg-[#fdf8f4] border-b border-[#f5ede4]">
+									{[
+										{ label: "Sản phẩm", align: "left" },
+										{
+											label: "Danh mục / Hãng",
+											align: "left",
+										},
+										{ label: "Giá bán", align: "left" },
+										{
+											label: "Trạng thái",
+											align: "center",
+										},
+										{ label: "Hành động", align: "center" },
+									].map(({ label, align }) => (
+										<th
+											key={label}
+											className={`px-5 py-3.5 text-[10px] font-bold tracking-[.15em] uppercase text-[#a08070] text-${align}`}>
+											{label}
+										</th>
+									))}
+								</tr>
+							</thead>
+							<tbody>
+								{loading ? (
+									<tr>
+										<td
+											colSpan="5"
+											className="text-center py-16">
+											<Loader2
+												className="animate-spin inline text-[#c2784d]"
+												size={28}
+											/>
+										</td>
+									</tr>
+								) : (
+									products.map((product) => (
+										<tr
+											key={product._id}
+											className={`adm-row border-b border-[#f8f0e8] last:border-0 ${!product.isPublished ? "opacity-60" : ""}`}>
+											{/* Product */}
+											<td className="px-5 py-3.5">
+												<div className="flex items-center gap-3">
+													<div className="w-12 h-12 rounded-xl overflow-hidden border border-[#f0ddd0] bg-[#fdf8f4] shrink-0">
+														<img
+															src={
+																product
+																	.variants?.[0]
+																	?.images[0] ||
+																"https://placehold.co/100x100?text=—"
+															}
+															alt="img"
+															className="w-full h-full object-cover"
+														/>
+													</div>
+													<div>
+														<p
+															className={`font-semibold w-44 truncate text-sm ${!product.isPublished ? "text-[#9a8878] line-through" : "text-[#1a1914]"}`}
+															title={
+																product.name
+															}>
+															{product.name}
+														</p>
+														<p className="text-[11px] text-[#b0a090] mt-0.5">
+															{product.variants
+																?.length ||
+																0}{" "}
+															màu sắc
+														</p>
+													</div>
+												</div>
+											</td>
+											{/* Category / Brand */}
+											<td className="px-5 py-3.5">
+												<p className="text-[#3a2818] font-medium text-sm">
+													{product.category?.name ||
+														"N/A"}
+												</p>
+												<p className="text-[11px] text-[#a08070] mt-0.5">
+													{product.brand?.name ||
+														"N/A"}
+												</p>
+											</td>
+											{/* Price */}
+											<td className="px-5 py-3.5">
+												<span
+													className="font-bold text-[#c2784d]"
+													style={{
+														fontFamily:
+															"'Syne',sans-serif",
+													}}>
+													{fmt(product.price)}
+												</span>
+											</td>
+											{/* Status */}
+											<td className="px-5 py-3.5 text-center">
+												<span
+													className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] font-bold border ${
+														product.isPublished
+															? "bg-green-50 text-green-700 border-green-200"
+															: "bg-[#f5f5f5] text-[#9a8878] border-[#e0d8d0]"
+													}`}>
+													<span
+														className={`w-1.5 h-1.5 rounded-full ${product.isPublished ? "bg-green-500" : "bg-[#c0b0a0]"}`}
+													/>
+													{product.isPublished
+														? "Đang hiện"
+														: "Đã ẩn"}
+												</span>
+											</td>
+											{/* Actions */}
+											<td className="px-5 py-3.5">
+												<div className="flex items-center justify-center gap-1.5">
+													<button
+														onClick={() =>
+															handleTogglePublish(
+																product,
+															)
+														}
+														title={
+															product.isPublished
+																? "Ẩn sản phẩm"
+																: "Hiện lại"
+														}
+														className={`p-2 rounded-lg transition text-sm font-medium ${
+															product.isPublished
+																? "bg-[#f5ede4] text-[#a08070] hover:bg-[#ffe0c8] hover:text-[#c2784d]"
+																: "bg-green-50 text-green-600 hover:bg-green-100"
+														}`}>
+														{product.isPublished ? (
+															<EyeOff size={14} />
+														) : (
+															<Eye size={14} />
+														)}
+													</button>
+													<Link
+														to={`/admin/products/edit/${product.slug}`}
+														className="p-2 rounded-lg bg-[#eff4ff] text-[#5b8dee] hover:bg-[#dde8ff] transition">
+														<Edit size={14} />
+													</Link>
+													<button
+														onClick={() =>
+															handleDelete(
+																product._id,
+																product.name,
+															)
+														}
+														className="p-2 rounded-lg bg-red-50 text-red-400 hover:bg-red-100 hover:text-red-600 transition">
+														<Trash2 size={14} />
+													</button>
+												</div>
+											</td>
+										</tr>
+									))
+								)}
+							</tbody>
+						</table>
+						{products.length === 0 && !loading && (
+							<div className="text-center py-14">
+								<Package
+									size={28}
+									className="text-[#e0d0c0] mx-auto mb-3"
+								/>
+								<p className="text-[#b0a090] text-sm">
+									Không tìm thấy sản phẩm nào.
+								</p>
+							</div>
+						)}
+					</div>
+
+					{/* ── Pagination ── */}
+					<div className="px-5 py-4 border-t border-[#f5ede4]">
+						<Pagination
+							currentPage={page}
+							totalPages={totalPages}
+							onPageChange={setPage}
+						/>
 					</div>
 				</div>
 			</div>
-
-			{/* BẢNG DỮ LIỆU */}
-			<div className="overflow-x-auto">
-				<table className="w-full text-left text-sm whitespace-nowrap">
-					<thead className="bg-gray-50 text-gray-600 font-medium border-b">
-						<tr>
-							<th className="px-6 py-4">Sản Phẩm</th>
-							<th className="px-6 py-4">Danh Mục / Hãng</th>
-							<th className="px-6 py-4">Giá Bán</th>
-							<th className="px-6 py-4 text-center">
-								Trạng Thái
-							</th>
-							<th className="px-6 py-4 text-center">Hành Động</th>
-						</tr>
-					</thead>
-					<tbody className="divide-y divide-gray-100">
-						{loading ? (
-							<tr>
-								<td
-									colSpan="5"
-									className="text-center py-10">
-									<Loader2 className="animate-spin inline text-orange-600" />
-								</td>
-							</tr>
-						) : (
-							products.map((product) => (
-								<tr
-									key={product._id}
-									className={`transition ${!product.isPublished ? "bg-gray-50/50 grayscale-20" : "hover:bg-gray-50"}`}>
-									<td className="px-6 py-4 flex items-center space-x-4">
-										<img
-											src={
-												product.variants?.[0]
-													?.images[0] ||
-												"https://placehold.co/100x100?text=No+Image"
-											}
-											alt="img"
-											className="w-12 h-12 rounded object-cover border"
-										/>
-										<div>
-											<p
-												className={`font-bold w-48 md:w-56 truncate ${!product.isPublished ? "text-gray-500 line-through" : "text-gray-900"}`}
-												title={product.name}>
-												{product.name}
-											</p>
-											<p className="text-xs text-gray-500 mt-1">
-												{product.variants?.length || 0}{" "}
-												Phiên bản màu
-											</p>
-										</div>
-									</td>
-									<td className="px-6 py-4">
-										<p className="text-gray-900 font-medium">
-											{product.category?.name || "N/A"}
-										</p>
-										<p className="text-xs text-gray-500 mt-1">
-											{product.brand?.name || "N/A"}
-										</p>
-									</td>
-									<td className="px-6 py-4 font-bold text-orange-600">
-										{new Intl.NumberFormat("vi-VN", {
-											style: "currency",
-											currency: "VND",
-										}).format(product.price)}
-									</td>
-
-									{/* HIỂN THỊ TRẠNG THÁI */}
-									<td className="px-6 py-4 text-center">
-										<span
-											className={`inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold ${product.isPublished ? "bg-green-100 text-green-700" : "bg-gray-200 text-gray-600"}`}>
-											{product.isPublished
-												? "Đang hiện"
-												: "Đã ẩn"}
-										</span>
-									</td>
-
-									<td className="px-6 py-4 text-center space-x-2 flex items-center justify-center">
-										{/* Nút Ẩn/Hiện Nhanh */}
-										<button
-											onClick={() =>
-												handleTogglePublish(product)
-											}
-											title={
-												product.isPublished
-													? "Nhấn để ẩn sản phẩm"
-													: "Nhấn để hiển thị lại"
-											}
-											className={`p-2 rounded transition ${product.isPublished ? "text-gray-600 hover:text-orange-600 bg-gray-100 hover:bg-orange-50" : "text-green-600 bg-green-50 hover:bg-green-100"}`}>
-											{product.isPublished ? (
-												<EyeOff size={16} />
-											) : (
-												<Eye size={16} />
-											)}
-										</button>
-
-										<Link
-											to={`/admin/products/edit/${product.slug}`}
-											className="text-blue-600 hover:text-blue-800 transition p-2 bg-blue-50 rounded inline-block">
-											<Edit size={16} />
-										</Link>
-										<button
-											onClick={() =>
-												handleDelete(product._id)
-											}
-											className="text-red-600 hover:text-red-800 transition p-2 bg-red-50 rounded inline-block">
-											<Trash2 size={16} />
-										</button>
-									</td>
-								</tr>
-							))
-						)}
-					</tbody>
-				</table>
-				{products.length === 0 && !loading && (
-					<div className="text-center py-10 text-gray-500">
-						Không tìm thấy sản phẩm.
-					</div>
-				)}
-			</div>
-
-			<div className="p-4 border-t border-gray-100">
-				<Pagination
-					currentPage={page}
-					totalPages={totalPages}
-					onPageChange={setPage}
-				/>
-			</div>
-		</div>
+		</>
 	);
 };
 

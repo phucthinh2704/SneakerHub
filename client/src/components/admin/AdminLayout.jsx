@@ -1,4 +1,3 @@
-// src/layouts/AdminLayout.jsx
 import React, { useState } from "react";
 import { Outlet, Link, useLocation, useNavigate } from "react-router-dom";
 import {
@@ -9,50 +8,30 @@ import {
 	LogOut,
 	Menu,
 	X,
-  ListTree,
-  Tag,
+	ListTree,
+	Tag,
+	ChevronRight,
+	Store,
 } from "lucide-react";
 import { useDispatch } from "react-redux";
 import { logout } from "../../redux/authSlice";
 
+const MENU = [
+	{ title: "Tổng quan", path: "/admin/dashboard", icon: LayoutDashboard },
+	{ title: "Đơn hàng", path: "/admin/orders", icon: ShoppingBag },
+	{ title: "Sản phẩm", path: "/admin/products", icon: Package },
+	{ title: "Danh mục", path: "/admin/categories", icon: ListTree },
+	{ title: "Thương hiệu", path: "/admin/brands", icon: Tag },
+	{ title: "Khách hàng", path: "/admin/users", icon: Users },
+];
+
 const AdminLayout = () => {
-	const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+	const [open, setOpen] = useState(true);
 	const location = useLocation();
 	const dispatch = useDispatch();
 	const navigate = useNavigate();
 
-	const menuItems = [
-		{
-			title: "Tổng quan",
-			path: "/admin/dashboard",
-			icon: <LayoutDashboard size={20} />,
-		},
-		{
-			title: "Đơn hàng",
-			path: "/admin/orders",
-			icon: <ShoppingBag size={20} />,
-		},
-		{
-			title: "Sản phẩm",
-			path: "/admin/products",
-			icon: <Package size={20} />,
-		},
-		{
-			title: "Danh mục",
-			path: "/admin/categories",
-			icon: <ListTree size={20} />,
-		},
-		{
-			title: "Thương hiệu",
-			path: "/admin/brands",
-			icon: <Tag size={20} />,
-		},
-		{
-			title: "Khách hàng",
-			path: "/admin/users",
-			icon: <Users size={20} />,
-		},
-	];
+	const activeItem = MENU.find((m) => location.pathname.includes(m.path));
 
 	const handleLogout = () => {
 		dispatch(logout());
@@ -62,88 +41,142 @@ const AdminLayout = () => {
 	};
 
 	return (
-		<div className="min-h-screen bg-gray-100 flex font-sans">
-			{/* Sidebar */}
-			<aside
-				className={`bg-gray-900 text-white w-64 shrink-0 transition-all duration-300 ${isSidebarOpen ? "translate-x-0" : "-translate-x-64"} fixed md:relative z-50 h-screen`}>
-				<div className="h-20 flex items-center justify-between px-6 border-b border-gray-800">
-					<Link
-						to="/"
-						className="text-2xl font-extrabold tracking-tight text-white">
-						ADMIN<span className="text-orange-500">PANEL</span>
-					</Link>
-					<button
-						onClick={() => setIsSidebarOpen(false)}
-						className="md:hidden text-gray-400 hover:text-white">
-						<X size={24} />
-					</button>
-				</div>
+		<>
+			<style>{`
+				.adm-layout { font-family:'DM Sans',sans-serif; }
+				.adm-logo   { font-family:'Syne',sans-serif; }
+				.adm-nav-link { transition: background .15s, color .15s, transform .15s; }
+				.adm-nav-link:hover { transform: translateX(3px); }
+			`}</style>
 
-				<nav className="p-4 space-y-2">
-					{menuItems.map((item) => {
-						const isActive = location.pathname.includes(item.path);
-						return (
-							<Link
-								key={item.path}
-								to={item.path}
-								className={`flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors ${
-									isActive
-										? "bg-orange-600 text-white"
-										: "text-gray-400 hover:bg-gray-800 hover:text-white"
-								}`}>
-								{item.icon}
-								<span className="font-medium">
-									{item.title}
-								</span>
-							</Link>
-						);
-					})}
-				</nav>
-
-				<div className="absolute bottom-0 w-full p-4 border-t border-gray-800">
-					<button
-						onClick={handleLogout}
-						className="flex items-center space-x-3 text-red-400 hover:text-red-300 transition-colors w-full px-4 py-2">
-						<LogOut size={20} />
-						<span className="font-medium">Đăng xuất</span>
-					</button>
-				</div>
-			</aside>
-
-			{/* Main Content */}
-			<main className="flex-1 flex flex-col min-w-0 h-screen overflow-hidden">
-				{/* Top Navbar */}
-				<header className="h-20 bg-white shadow-sm flex items-center justify-between px-6 shrink-0">
-					<div className="flex items-center">
-						<button
-							onClick={() => setIsSidebarOpen(!isSidebarOpen)}
-							className="text-gray-600 hover:text-gray-900 focus:outline-none">
-							<Menu size={24} />
-						</button>
-						<h2 className="ml-4 text-xl font-bold text-gray-800 capitalize">
-							{menuItems.find((item) =>
-								location.pathname.includes(item.path),
-							)?.title || "Quản trị"}
-						</h2>
+			<div
+				className="adm-layout min-h-screen flex"
+				style={{ background: "#f4efe9" }}>
+				{/* ── SIDEBAR ── */}
+				<aside
+					className={`shrink-0 h-screen sticky top-0 flex flex-col transition-all duration-300 z-50
+					${open ? "w-60" : "w-0 md:w-16"} overflow-hidden`}
+					style={{
+						background:
+							"linear-gradient(180deg,#1a1914 0%,#231e18 100%)",
+					}}>
+					{/* Logo */}
+					<div className="h-16 flex items-center gap-3 px-4 border-b border-white/6 shrink-0">
+						<div className="w-8 h-8 rounded-xl bg-[#c2784d] flex items-center justify-center shrink-0">
+							<Store
+								size={15}
+								className="text-white"
+							/>
+						</div>
+						{open && (
+							<div className="overflow-hidden">
+								<p className="adm-logo text-white font-bold text-sm leading-none">
+									SoleStore
+								</p>
+								<p className="text-[10px] text-white/30 tracking-widest uppercase mt-0.5">
+									Admin Panel
+								</p>
+							</div>
+						)}
 					</div>
-					<div className="flex items-center space-x-4">
+
+					{/* Nav */}
+					<nav className="flex-1 py-4 px-2 space-y-0.5 overflow-y-auto">
+						{MENU.map(({ title, path, icon: Icon }) => {
+							const isActive = location.pathname.includes(path);
+							return (
+								<Link
+									key={path}
+									to={path}
+									className={`adm-nav-link flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium group
+										${
+											isActive
+												? "bg-[#c2784d] text-white"
+												: "text-white/40 hover:bg-white/6 hover:text-white/80"
+										}`}>
+									<Icon
+										size={17}
+										className="shrink-0"
+									/>
+									{open && (
+										<span className="truncate">
+											{title}
+										</span>
+									)}
+									{open && isActive && (
+										<ChevronRight
+											size={13}
+											className="ml-auto opacity-70"
+										/>
+									)}
+								</Link>
+							);
+						})}
+					</nav>
+
+					{/* Footer */}
+					<div className="px-2 pb-4 border-t border-white/6 pt-3 shrink-0">
 						<Link
 							to="/"
-							className="text-sm text-orange-600 font-medium hover:underline">
-							Xem cửa hàng
+							className="adm-nav-link flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs font-medium text-white/30 hover:text-white/60 hover:bg-white/4 mb-1">
+							<Store
+								size={15}
+								className="shrink-0"
+							/>
+							{open && "Xem cửa hàng"}
 						</Link>
-						<div className="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center font-bold text-gray-700">
-							A
-						</div>
+						<button
+							onClick={handleLogout}
+							className="adm-nav-link w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs font-medium text-red-400/70 hover:text-red-400 hover:bg-red-500/8">
+							<LogOut
+								size={15}
+								className="shrink-0"
+							/>
+							{open && "Đăng xuất"}
+						</button>
 					</div>
-				</header>
+				</aside>
 
-				{/* Dynamic Content */}
-				<div className="flex-1 overflow-auto p-6">
-					<Outlet />
-				</div>
-			</main>
-		</div>
+				{/* ── MAIN ── */}
+				<main className="flex-1 flex flex-col min-w-0 h-screen overflow-hidden">
+					{/* Top bar */}
+					<header
+						className="h-16 bg-white/80 backdrop-blur border-b border-[#f0e5d8] flex items-center justify-between px-5 shrink-0"
+						style={{ boxShadow: "0 1px 0 rgba(194,120,77,.08)" }}>
+						<div className="flex items-center gap-3">
+							<button
+								onClick={() => setOpen(!open)}
+								className="w-8 h-8 rounded-lg bg-[#fdf8f4] border border-[#e8d8cc] flex items-center justify-center text-[#8a7060] hover:bg-[#fff3eb] transition">
+								<Menu size={16} />
+							</button>
+							<div>
+								<p className="text-[10px] font-bold tracking-[.2em] uppercase text-[#c2784d]">
+									SoleStore Admin
+								</p>
+								<h2 className="adm-logo text-[#1a1914] font-bold text-sm leading-none mt-0.5">
+									{activeItem?.title || "Quản trị"}
+								</h2>
+							</div>
+						</div>
+						<div className="flex items-center gap-3">
+							<Link
+								to="/"
+								className="text-xs font-semibold text-[#c2784d] hover:text-[#a05e38] transition">
+								← Về cửa hàng
+							</Link>
+							<div className="w-8 h-8 rounded-xl bg-[#c2784d] flex items-center justify-center text-white text-xs font-bold adm-logo">
+								A
+							</div>
+						</div>
+					</header>
+
+					{/* Page content */}
+					<div className="flex-1 overflow-auto p-5">
+						<Outlet />
+					</div>
+				</main>
+			</div>
+		</>
 	);
 };
 

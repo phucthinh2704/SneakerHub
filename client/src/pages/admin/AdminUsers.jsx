@@ -6,6 +6,8 @@ import {
 	Shield,
 	Trash2,
 	User,
+	ChevronDown,
+	UserCog,
 } from "lucide-react";
 import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
@@ -15,21 +17,30 @@ import {
 	apiGetAllUsers,
 	apiUpdateUserRole,
 } from "../../api/admin";
-import Pagination from "../../components/Pagination"; // Import component phân trang của bạn
+import Pagination from "../../components/Pagination";
+
+const ROLE_CFG = {
+	admin: {
+		label: "Admin",
+		cls: "bg-[#fff0e8] text-[#c2784d] border-[#f0ddd0]",
+		dot: "bg-[#c2784d]",
+	},
+	user: {
+		label: "User",
+		cls: "bg-[#f0f4ff] text-[#5b8dee] border-[#d0dfff]",
+		dot: "bg-[#5b8dee]",
+	},
+};
 
 const AdminUsers = () => {
 	const [users, setUsers] = useState([]);
 	const [loading, setLoading] = useState(true);
-
-	// States cho Phân trang, Search, Sort
 	const [page, setPage] = useState(1);
 	const [totalPages, setTotalPages] = useState(1);
 	const [searchTerm, setSearchTerm] = useState("");
 	const [sort, setSort] = useState("newest");
 
-	// Fetch API với Params
 	useEffect(() => {
-		// Dùng timer để Debounce khi gõ tìm kiếm (tránh spam API)
 		const timer = setTimeout(() => {
 			fetchUsers();
 		}, 500);
@@ -58,21 +69,23 @@ const AdminUsers = () => {
 		}
 	};
 
-	// --- HÀNH ĐỘNG 1: THAY ĐỔI QUYỀN (ROLE) ---
 	const handleRoleChange = async (user) => {
 		const newRole = user.role === "admin" ? "user" : "admin";
-
 		const result = await Swal.fire({
-			title: "Thay đổi quyền?",
-			text: `Bạn muốn chuyển tài khoản ${user.name} thành ${newRole.toUpperCase()}?`,
+			title: `<span style="font-family:'Syne',sans-serif;font-size:1.1rem">Thay đổi quyền hạn?</span>`,
+			html: `<span style="font-family:'DM Sans',sans-serif;font-size:.9rem;color:#6a5a4a">Chuyển <b>${user.name}</b> thành <b>${newRole.toUpperCase()}</b>?</span>`,
 			icon: "question",
 			showCancelButton: true,
-			confirmButtonColor: "#ea580c",
-			cancelButtonColor: "#6b7280",
+			confirmButtonColor: "#c2784d",
+			cancelButtonColor: "#9ca3af",
 			confirmButtonText: "Xác nhận",
 			cancelButtonText: "Hủy",
+			customClass: {
+				popup: "rounded-2xl",
+				confirmButton: "rounded-xl font-bold",
+				cancelButton: "rounded-xl font-bold",
+			},
 		});
-
 		if (result.isConfirmed) {
 			try {
 				const res = await apiUpdateUserRole(user._id, newRole);
@@ -92,19 +105,22 @@ const AdminUsers = () => {
 		}
 	};
 
-	// Hàm xóa User
-	const handleDeleteUser = async (id) => {
+	const handleDeleteUser = async (id, name) => {
 		const result = await Swal.fire({
-			title: "Xóa người dùng?",
-			text: "Tài khoản này sẽ bị xóa vĩnh viễn. Bạn có chắc chắn?",
-			icon: "error", // Icon màu đỏ nhấn mạnh sự nguy hiểm
+			title: `<span style="font-family:'Syne',sans-serif;font-size:1.1rem">Xóa tài khoản?</span>`,
+			html: `<span style="font-family:'DM Sans',sans-serif;font-size:.9rem;color:#6a5a4a">Tài khoản <b>${name}</b> sẽ bị xóa vĩnh viễn.</span>`,
+			icon: "warning",
 			showCancelButton: true,
 			confirmButtonColor: "#ef4444",
-			cancelButtonColor: "#6b7280",
+			cancelButtonColor: "#9ca3af",
 			confirmButtonText: "Xóa tài khoản",
 			cancelButtonText: "Hủy",
+			customClass: {
+				popup: "rounded-2xl",
+				confirmButton: "rounded-xl font-bold",
+				cancelButton: "rounded-xl font-bold",
+			},
 		});
-
 		if (result.isConfirmed) {
 			try {
 				const res = await apiDeleteUser(id);
@@ -122,165 +138,243 @@ const AdminUsers = () => {
 	};
 
 	return (
-		<div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
-			{/* Header: Search & Sort */}
-			<div className="p-6 border-b border-gray-100 flex flex-col md:flex-row justify-between items-center gap-4">
-				<h2 className="text-xl font-bold text-gray-800 hidden lg:block">
-					Quản lý Khách hàng
-				</h2>
+		<>
+			<style>{`
+			@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=DM+Sans:wght@300;400;500;600&display=swap');
+				.adm-root { font-family:'DM Sans',sans-serif; }
+				.adm-heading { font-family:'Syne',sans-serif; }
+				.adm-row { transition: background .15s; }
+				.adm-row:hover { background: #fdf9f6; }
+				.adm-fade { animation: admFadeUp .35s ease both; }
+				@keyframes admFadeUp { from{opacity:0;transform:translateY(10px)} to{opacity:1;transform:none} }
+			`}</style>
 
-				<div className="flex w-full lg:w-auto items-center space-x-3">
-					<div className="relative w-full md:w-80">
-						<Search
-							className="absolute left-3 top-2.5 text-gray-400"
-							size={18}
+			<div className="adm-root adm-fade">
+				{/* ── Header ── */}
+				<div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-5">
+					<div>
+						<p className="text-[10px] font-bold tracking-[.2em] uppercase text-[#c2784d] mb-0.5">
+							SoleStore Admin
+						</p>
+						<h2 className="adm-heading text-[#1a1914] text-2xl font-bold">
+							Quản lý Khách hàng
+						</h2>
+					</div>
+					<div className="flex items-center gap-2 bg-[#fff3eb] border border-[#f0ddd0] rounded-xl px-3.5 py-2">
+						<UserCog
+							size={14}
+							className="text-[#c2784d]"
 						/>
-						<input
-							type="text"
-							placeholder="Tìm tên, email..."
-							value={searchTerm}
-							onChange={(e) => {
-								setSearchTerm(e.target.value);
-								setPage(1);
-							}}
-							className="w-full pl-9 pr-4 py-2 border rounded-lg text-sm focus:ring-2 focus:ring-orange-500 outline-none"
-						/>
+						<span className="text-xs font-bold text-[#c2784d]">
+							{users.length} tài khoản
+						</span>
+					</div>
+				</div>
+
+				<div
+					className="bg-white border border-[#f0e5d8] rounded-2xl overflow-hidden"
+					style={{ boxShadow: "0 2px 20px rgba(194,120,77,.07)" }}>
+					{/* ── Toolbar ── */}
+					<div className="px-6 py-4 border-b border-[#f5ede4] flex flex-col md:flex-row gap-3">
+						<div className="relative flex-1">
+							<Search
+								className="absolute left-3.5 top-1/2 -translate-y-1/2 text-[#c0a890]"
+								size={15}
+							/>
+							<input
+								type="text"
+								placeholder="Tìm theo tên, email..."
+								value={searchTerm}
+								onChange={(e) => {
+									setSearchTerm(e.target.value);
+									setPage(1);
+								}}
+								className="w-full pl-10 pr-4 py-2.5 bg-[#fdf8f4] border border-[#e8d8cc] rounded-xl text-sm text-[#3a2818] placeholder-[#c0a890] outline-none focus:border-[#c2784d] focus:ring-2 focus:ring-[#c2784d]/15 transition"
+							/>
+						</div>
+						<div className="relative">
+							<select
+								value={sort}
+								onChange={(e) => {
+									setSort(e.target.value);
+									setPage(1);
+								}}
+								className="appearance-none bg-[#fdf8f4] border border-[#e8d8cc] rounded-xl pl-4 pr-9 py-2.5 text-sm font-medium text-[#3a2818] outline-none focus:border-[#c2784d] focus:ring-2 focus:ring-[#c2784d]/15 transition cursor-pointer">
+								<option value="newest">Mới nhất</option>
+								<option value="oldest">Cũ nhất</option>
+								<option value="name_asc">Tên (A–Z)</option>
+								<option value="name_desc">Tên (Z–A)</option>
+							</select>
+							<ChevronDown
+								size={13}
+								className="absolute right-3 top-1/2 -translate-y-1/2 text-[#a08070] pointer-events-none"
+							/>
+						</div>
 					</div>
 
-					<select
-						value={sort}
-						onChange={(e) => {
-							setSort(e.target.value);
-							setPage(1);
-						}}
-						className="border rounded-lg px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-orange-500">
-						<option value="newest">Mới nhất</option>
-						<option value="oldest">Cũ nhất</option>
-						<option value="name_asc">Tên (A-Z)</option>
-						<option value="name_desc">Tên (Z-A)</option>
-					</select>
+					{/* ── Table ── */}
+					<div className="overflow-x-auto">
+						<table className="w-full text-sm">
+							<thead>
+								<tr className="bg-[#fdf8f4] border-b border-[#f5ede4]">
+									{[
+										"Khách hàng",
+										"Liên hệ",
+										"Vai trò",
+										"Ngày tham gia",
+										"Hành động",
+									].map((h, i) => (
+										<th
+											key={h}
+											className={`px-5 py-3.5 text-[10px] font-bold tracking-[.15em] uppercase text-[#a08070] ${i >= 2 ? "text-center" : "text-left"}`}>
+											{h}
+										</th>
+									))}
+								</tr>
+							</thead>
+							<tbody>
+								{loading ? (
+									<tr>
+										<td
+											colSpan="5"
+											className="text-center py-16">
+											<Loader2
+												className="animate-spin inline text-[#c2784d]"
+												size={28}
+											/>
+										</td>
+									</tr>
+								) : (
+									users.map((user) => {
+										const role =
+											ROLE_CFG[user.role] ||
+											ROLE_CFG.user;
+										const initials = user.name
+											.split(" ")
+											.map((n) => n[0])
+											.slice(0, 2)
+											.join("")
+											.toUpperCase();
+										return (
+											<tr
+												key={user._id}
+												className="adm-row border-b border-[#f8f0e8] last:border-0">
+												<td className="px-5 py-4">
+													<div className="flex items-center gap-3">
+														<div className="w-9 h-9 rounded-xl bg-[#fff0e8] border border-[#f0ddd0] flex items-center justify-center text-[#c2784d] text-xs font-bold shrink-0">
+															{initials}
+														</div>
+														<div>
+															<p className="font-semibold text-[#1a1914] text-sm">
+																{user.name}
+															</p>
+														</div>
+													</div>
+												</td>
+												<td className="px-5 py-4">
+													<div className="space-y-1">
+														<div className="flex items-center gap-1.5 text-[#6a5a4a] text-xs">
+															<Mail
+																size={11}
+																className="text-[#a08070]"
+															/>{" "}
+															{user.email}
+														</div>
+														<div className="flex items-center gap-1.5 text-[#6a5a4a] text-xs">
+															<Phone
+																size={11}
+																className="text-[#a08070]"
+															/>{" "}
+															{user.phone ||
+																"Chưa cập nhật"}
+														</div>
+													</div>
+												</td>
+												<td className="px-5 py-4 text-center">
+													<span
+														className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] font-bold border ${role.cls}`}>
+														<span
+															className={`w-1.5 h-1.5 rounded-full ${role.dot}`}
+														/>
+														{role.label}
+													</span>
+												</td>
+												<td className="px-5 py-4 text-center text-xs text-[#9a8878]">
+													{new Date(
+														user.createdAt,
+													).toLocaleDateString(
+														"vi-VN",
+													)}
+												</td>
+												<td className="px-5 py-4">
+													<div className="flex items-center justify-center gap-2">
+														<button
+															onClick={() =>
+																handleRoleChange(
+																	user,
+																)
+															}
+															title={
+																user.role ===
+																"admin"
+																	? "Hạ quyền User"
+																	: "Cấp quyền Admin"
+															}
+															className="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 bg-[#eff4ff] text-[#5b8dee] border border-[#d0dfff] rounded-lg hover:bg-[#dde8ff] transition">
+															<Shield size={12} />
+															{user.role ===
+															"admin"
+																? "Hạ quyền"
+																: "Cấp Admin"}
+														</button>
+														{user.role !==
+															"admin" && (
+															<button
+																onClick={() =>
+																	handleDeleteUser(
+																		user._id,
+																		user.name,
+																	)
+																}
+																title="Xóa tài khoản"
+																className="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 bg-red-50 text-red-500 border border-red-200 rounded-lg hover:bg-red-100 transition">
+																<Trash2
+																	size={12}
+																/>
+															</button>
+														)}
+													</div>
+												</td>
+											</tr>
+										);
+									})
+								)}
+							</tbody>
+						</table>
+						{users.length === 0 && !loading && (
+							<div className="text-center py-14">
+								<User
+									size={28}
+									className="text-[#e0d0c0] mx-auto mb-3"
+								/>
+								<p className="text-[#b0a090] text-sm">
+									Không tìm thấy tài khoản nào.
+								</p>
+							</div>
+						)}
+					</div>
+
+					{/* ── Pagination ── */}
+					<div className="px-5 py-4 border-t border-[#f5ede4]">
+						<Pagination
+							currentPage={page}
+							totalPages={totalPages}
+							onPageChange={setPage}
+						/>
+					</div>
 				</div>
 			</div>
-
-			{/* Bảng dữ liệu */}
-			<div className="overflow-x-auto">
-				<table className="w-full text-left text-sm whitespace-nowrap">
-					<thead className="bg-gray-50 text-gray-600 font-medium border-b">
-						<tr>
-							<th className="px-6 py-4">Khách Hàng</th>
-							<th className="px-6 py-4">Liên Hệ</th>
-							<th className="px-6 py-4 text-center">Vai Trò</th>
-							<th className="px-6 py-4">Ngày Tham Gia</th>
-							<th className="px-6 py-4 text-center">Hành Động</th>
-						</tr>
-					</thead>
-					<tbody className="divide-y divide-gray-100">
-						{loading ? (
-							<tr>
-								<td
-									colSpan="5"
-									className="text-center py-12">
-									<Loader2 className="animate-spin inline w-8 h-8 text-orange-600" />
-								</td>
-							</tr>
-						) : (
-							users.map((user) => (
-								<tr
-									key={user._id}
-									className="hover:bg-gray-50 transition">
-									<td className="px-6 py-4 flex items-center space-x-3">
-										<div className="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center text-orange-600 font-bold">
-											{user.name.charAt(0).toUpperCase()}
-										</div>
-										<span className="font-bold text-gray-900">
-											{user.name}
-										</span>
-									</td>
-									<td className="px-6 py-4 space-y-1">
-										<div className="flex items-center text-gray-600">
-											<Mail
-												size={14}
-												className="mr-2"
-											/>{" "}
-											{user.email}
-										</div>
-										<div className="flex items-center text-gray-600">
-											<Phone
-												size={14}
-												className="mr-2"
-											/>{" "}
-											{user.phone || "Chưa cập nhật"}
-										</div>
-									</td>
-									<td className="px-6 py-4 text-center">
-										<span
-											className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-bold uppercase ${user.role === "admin" ? "bg-purple-100 text-purple-700" : "bg-gray-100 text-gray-700"}`}>
-											{user.role === "admin" ? (
-												<Shield
-													size={12}
-													className="mr-1"
-												/>
-											) : (
-												<User
-													size={12}
-													className="mr-1"
-												/>
-											)}
-											{user.role}
-										</span>
-									</td>
-									<td className="px-6 py-4 text-gray-500">
-										{new Date(
-											user.createdAt,
-										).toLocaleDateString("vi-VN")}
-									</td>
-									<td className="px-6 py-4 text-center space-x-2">
-										{/* Nút Đổi quyền */}
-										<button
-											onClick={() =>
-												handleRoleChange(user)
-											}
-											title={
-												user.role === "admin"
-													? "Hạ quyền xuống User"
-													: "Cấp quyền Admin"
-											}
-											className="text-blue-600 hover:text-blue-800 p-2 bg-blue-50 rounded transition">
-											<Shield size={16} />
-										</button>
-										{/* Nút Xóa (Ẩn nếu là admin để tránh tự xóa mình) */}
-										{user.role !== "admin" && (
-											<button
-												onClick={() =>
-													handleDeleteUser(user._id)
-												}
-												title="Xóa tài khoản"
-												className="text-red-600 hover:text-red-800 p-2 bg-red-50 rounded transition">
-												<Trash2 size={16} />
-											</button>
-										)}
-									</td>
-								</tr>
-							))
-						)}
-					</tbody>
-				</table>
-				{users.length === 0 && !loading && (
-					<div className="text-center py-10 text-gray-500">
-						Không tìm thấy dữ liệu.
-					</div>
-				)}
-			</div>
-
-			{/* Tích hợp Phân trang */}
-			<div className="p-4 border-t border-gray-100">
-				<Pagination
-					currentPage={page}
-					totalPages={totalPages}
-					onPageChange={setPage}
-				/>
-			</div>
-		</div>
+		</>
 	);
 };
 

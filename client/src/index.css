@@ -9,11 +9,6 @@
 	}
 }
 
-input,
-textarea,
-select {
-	@apply border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500;
-}
 button {
 	cursor: pointer;
 }

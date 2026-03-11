@@ -9,7 +9,8 @@ const Category = require("./models/Category");
 const User = require("./models/User");
 
 // --- 1. KẾT NỐI MONGODB ---
-mongoose.connect("mongodb+srv://thinhphuc2704_db_user:9nxgZ4bySYi3OuZb@cluster0.zylawbc.mongodb.net/sneaker-hub", {});
+// mongoose.connect("mongodb+srv://thinhphuc2704_db_user:9nxgZ4bySYi3OuZb@cluster0.zylawbc.mongodb.net/sneaker-hub", {});
+mongoose.connect("mongodb://localhost:27017/sneaker-hub", {});
 
 // --- 2. HÀM IMPORT DỮ LIỆU ---
 const importData = async () => {
